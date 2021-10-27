@@ -1,4 +1,19 @@
 
-h1 {
-  background-color: red;
+.item ul {
+    display: flex;
+    color: #555;
+    list-style-type:circle
+}
+
+.item ul li {
+    flex: 1;
+}
+
+h6 {
+    padding-top: 5px;
+    color: #555;
+}
+
+.skills-container {
+    display:none;
 }
