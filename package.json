@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx run http-server",
+    "start": "npx live-server",
     "generate": "npx resume-cli export --theme macchiato resume.html"
   },
   "repository": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/redaphid/resume#readme",
   "dependencies": {
-    "http-server": "^14.0.0",
     "jsonresume-theme-class": "^0.1.2",
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-even": "^0.13.0",
