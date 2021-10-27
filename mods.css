@@ -1,4 +1,7 @@
 
+.item {
+    padding-bottom: 10px;
+}
 .item ul {
     display: flex;
     color: #555;
@@ -22,4 +25,37 @@
     padding-top:5px;
     display:flex;
     flex-direction: row;
+}
+.about-container {
+    display:flex;
+    flex:1;
+    justify-content: space-evenly;
+}
+/* .resume-content {
+    display: flex;
+    flex-direction: column;
+} */
+
+.feature-advantage-benefits {
+    margin: 5px;   
+    margin-top:10px;
+}
+.feature-advantage-benefits h6 {
+    font-weight: bold;
+}
+.feature-advantage-benefit {
+ display: flex;
+ flex-direction: column;
+}
+.feature-advantage-benefit {
+    font-size:10px;
+   
+}
+.feature-advantage-benefit div {
+    margin-top: 5px;    
+}
+
+.feature-advantage-benefit .fab-title {
+    display:inline;
+    font-weight: bold;
 }

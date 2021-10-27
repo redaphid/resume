@@ -38,7 +38,14 @@
       "position": "Staff Software Engineer",
       "startDate": "2014-12-31",
       "summary": "Full stack design and development of the \"Octoblu Designer\", a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely. Design of the domain-specific language used by the Octoblu Designer.",
-      "website": "https://www.linkedin.com/company/citrix/"
+      "website": "https://www.linkedin.com/company/citrix/",
+      "fab": [
+        {
+          "feature": "Made the \"flow engine\" asynchronous, allowing us to run more than one flow per docker container. Previously, it was 1 container per flow, which was untenable.",
+          "advantage": "We were one of the first - if not the first - IoT platform that offered flow-based programming as a service.",
+          "benefit": "we saved $3000/mo on our AWS bill with this feature. And enabled the system to handle many more users/flows simultaneously."
+        }
+      ]
     },
     {
       "company": "Octoblu",

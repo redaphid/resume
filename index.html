@@ -276,12 +276,8 @@ ul.two-column li {
 }
 
 .left-column {
-  float: left;
-  width: 160px;
-  margin-right: 20px;
-  word-wrap: break-word;
+display:flex;
 }
-
 .right-column {
   width: auto;
   overflow: hidden;
@@ -415,10 +411,6 @@ ul.two-column li {
     <div class="resume-content">
       <aside class="left-column">
         <div class="container about-container">
-            <div class="title">
-                <h3>About</h3>
-                <div class="keyline"></div>
-            </div>
                 <div class="info-tag-container">
                     <i class="fa fa-map-marker"></i>
                 
@@ -525,17 +517,6 @@ ul.two-column li {
                                 <div class="keyline"></div>
                             </div>            </section>
             </div>
-            <div class="container languages-container">
-                <div class="title">
-                    <h3>Languages</h3>
-                    <div class="keyline"></div>
-                </div>
-                <ul class="minimal">
-                        <li>
-                            <h6>en <em>(Native Speaker)</em></h6>
-                        </li>
-                </ul>
-            </div>
       </aside>
       <div class="right-column">
                 <div class="container summary-container">
@@ -589,6 +570,7 @@ ul.two-column li {
                             <h6 class="skill">Typescript, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -616,6 +598,16 @@ ul.two-column li {
                             <h6 class="skill">Coffeescript, </h6>
                     </div>
         
+                    <div class="feature-advantage-benefits">
+                         <h6>Features, Advantage, and Benefits:</h6>
+                            <div class="feature-advantage-benefit">
+                                <div class="feature"><div class="fab-title">Feature:</div> Made the &quot;flow engine&quot; asynchronous, allowing us to run more than one flow per docker container. Previously, it was 1 container per flow, which was untenable.</div>
+                                <div class="advantage"><div class="fab-title">Advantage:</div> We were one of the first - if not the first - IoT platform that offered flow-based programming as a service.</div>
+                                <div class="benefit"><div class="fab-title">Benefit:</div> we saved $3000/mo on our AWS bill with this feature. And enabled the system to handle many more users/flows simultaneously.</div>
+                            </div>
+                        </div>             
+                    </div>
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -646,6 +638,7 @@ ul.two-column li {
                             <h6 class="skill">Coffeescript, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -671,6 +664,7 @@ ul.two-column li {
                             <h6 class="skill">HTML, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -701,6 +695,7 @@ ul.two-column li {
                             <h6 class="skill">Javascript, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -726,6 +721,7 @@ ul.two-column li {
                             <h6 class="skill">Python, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -749,6 +745,7 @@ ul.two-column li {
                             <h6 class="skill">Java, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -774,6 +771,7 @@ ul.two-column li {
                             <h6 class="skill">SQL, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -801,6 +799,7 @@ ul.two-column li {
                             <h6 class="skill">Python, </h6>
                     </div>
         
+                    </div>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -823,6 +822,7 @@ ul.two-column li {
                             <h6 class="skill">Ada, </h6>
                     </div>
         
+                    </div>
                 </section>
         </div>
         <div class="container education-container">
