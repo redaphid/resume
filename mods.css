@@ -9,11 +9,17 @@
     flex: 1;
 }
 
-h6 {
+/* h6.technologies {
     padding-top: 5px;
     color: #555;
-}
+} */
 
 .skills-container {
     display:none;
+}
+
+.technologies {
+    padding-top:5px;
+    display:flex;
+    flex-direction: row;
 }

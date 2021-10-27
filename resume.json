@@ -25,7 +25,7 @@
     {
       "company": "Magic Leap",
       "endDate": "2021-04-30",
-      "keywords": ["Node", "Golang", "C++", "Javascript", "Typescript"],
+      "technologies": ["Node", "Golang", "C++", "Javascript", "Typescript"],
       "position": "Development Team Lead",
       "startDate": "2019-06-30",
       "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",      
@@ -34,7 +34,7 @@
     {
       "company": "Citrix",
       "endDate": "2017-12-31",
-      "keywords": ["C++", "Javascript", "Coffeescript"],
+      "technologies": ["C++", "Javascript", "Coffeescript"],
       "position": "Staff Software Engineer",
       "startDate": "2014-12-31",
       "summary": "Full stack design and development of the \"Octoblu Designer\", a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely. Design of the domain-specific language used by the Octoblu Designer.",
@@ -43,7 +43,7 @@
     {
       "company": "Octoblu",
       "endDate": "2017-11-30",
-      "keywords": ["Node", "C++", "Javascript", "Coffeescript"],
+      "technologies": ["Node", "C++", "Javascript", "Coffeescript"],
       "position": "Software Consultant",
       "startDate": "2014-03-31",
       "summary": "Full stack development of  \"Meshblu\", an  internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial front end called \"Octoblu\" mentioned in the Citrix section.",
@@ -52,7 +52,7 @@
     {
       "company": "Unicon, Inc.",
       "endDate": "2014-05-31",
-      "keywords": ["Java", "Javascript", "HTML"],
+      "technologies": ["Java", "Javascript", "HTML"],
       "position": "Software Developer",
       "startDate": "2013-08-31",
       "summary": "Development and consulting work for higher education portal platforms.",
@@ -61,7 +61,7 @@
     {
       "company": "Omedix",
       "endDate": "2013-04-30",
-      "keywords": ["Java", "Javascript"],
+      "technologies": ["Java", "Javascript"],
       "position": "Software Architect",
       "startDate": "2010-03-31",
       "summary": "Helped design Omedix Engage platform, which managed patient and practice portals for the healthcare industry. Wrote systems that handled extremely sensitive healthcare data securely.\n\nDesigned the \"Black Box\", a physical network appliance installed in the datacenter of a medical practice that securely connected their electronic medical system to the Omedix Engage platform.\n\nDesigned 2 domain-specific languages to build custom patient forms for medical practices.\n\nActed as a liaison for Omedix Team India, offering tutorials and designs to teams on the other side of the world!",
@@ -70,7 +70,7 @@
     {
       "company": "Coherence-Based Modeling of Cultural Change and Political Violence (CCPV) project",
       "endDate": "2010-08-31",
-      "keywords": ["Java", "HTML", "Python"],
+      "technologies": ["Java", "HTML", "Python"],
       "position": "Software Architect",
       "startDate": "2009-01-31",
       "summary": "Designed and developed an intelligent, plugin based web crawler that used existing algorithms from social sciences to extract semantic meaning from natural language conversations on the web. \n\nInformally described as \"finding terrorists on the internet\", the system would trace the origin and spread of extremist ideas. Funded by  the Air Force Office of Scientific Research",
@@ -79,7 +79,7 @@
     {
       "company": "Laboratory for Interactive Learning Technologies",
       "endDate": "2009-01-31",
-      "keywords": ["C++", "Android", "Java"],
+      "technologies": ["C++", "Android", "Java"],
       "position": "Research Assistant",
       "startDate": "2008-08-31",
       "summary": "Performed research and development on augmented reality for mobile platforms. Designed an application to recognize nametags of users and augmented nametags with information of the wearer of the nametag.",
@@ -88,7 +88,7 @@
     {
       "company": "Avanade",
       "endDate": "2008-08-31",
-      "keywords": ["C#", ".NET", "SQL"],
+      "technologies": ["C#", ".NET", "SQL"],
       "position": "Solution Developer",
       "startDate": "2007-08-31",
       "summary": "Contract developer for Microsoft, working on disaster recovery and EULA-generation projects in C# and ASP.NET",
@@ -97,7 +97,7 @@
     {
       "company": "University of Puget Sound",
       "endDate": "2007-05-31",
-      "keywords": ["C++", "Ruby", "Python"],
+      "technologies": ["C++", "Ruby", "Python"],
       "position": "Software Developer",
       "startDate": "2003-08-31",
       "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers via the SMTP protocol.",
@@ -106,7 +106,7 @@
     {
       "company": "Software Development Alternatives",
       "endDate": "2003-01-31",
-      "keywords": ["C++", "Ada"],
+      "technologies": ["C++", "Ada"],
       "position": "Software Developer",
       "startDate": "2001-12-31",
       "summary": "Tested and fixed bugs for the Flight Management System of Airbus A320 aircraft, including some feature development. Subcontracted from Honeywell.",
@@ -140,77 +140,77 @@
     {
       "name": "Javascript",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Typescript",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Web Services",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Backend Development",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Agile Methodologies",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Software Architecture",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Cloud Computing",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Augmented Reality (AR)",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Go (Programming Language)",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Information Security",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "MongoDB",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Node.js",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Python",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Microservices",
       "level": "",
-      "keywords": []
+      "technologies": []
     },
     {
       "name": "Frontend Development",
       "level": "",
-      "keywords": []
+      "technologies": []
     }
   ],
   "languages": [
