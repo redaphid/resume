@@ -21,16 +21,7 @@
       }
     ]
   },
-  "work": [
-    {
-      "company": "Loqwai",
-      "endDate": "",
-      "highlights": [],
-      "position": "Co-Founder/Managing Partner",
-      "startDate": "2014-05-31",
-      "summary": "Full-stack, any-language software consulting for startups and other interesting projects.",
-      "website": "https://www.linkedin.com/company/loqwai/"
-    },
+  "work": [    
     {
       "company": "Magic Leap",
       "endDate": "2021-04-30",
@@ -147,17 +138,12 @@
   "publications": [],
   "skills": [
     {
-      "name": "JavaScript",
+      "name": "Javascript",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Software Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Java",
+      "name": "Typescript",
       "level": "",
       "keywords": []
     },
@@ -167,42 +153,12 @@
       "keywords": []
     },
     {
-      "name": "Magic Leap",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Web Development",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Test Driven Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Application Programming Interfaces",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MVC",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "PostgreSQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "OOP",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Back-End Web Development",
+      "name": "Backend Development",
       "level": "",
       "keywords": []
     },
@@ -217,26 +173,6 @@
       "keywords": []
     },
     {
-      "name": "MySQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "CoffeeScript",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Linux",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "CSS",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Cloud Computing",
       "level": "",
       "keywords": []
@@ -247,82 +183,12 @@
       "keywords": []
     },
     {
-      "name": "DB2",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Go (Programming Language)",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Data Architecture",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": ".NET",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "TFS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "API Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "TypeScript",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "SSIS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "C#",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "C++",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Shotokan Karate",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MVC Architecture",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Team Building",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Information Security",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "LINQ",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "iBatis",
       "level": "",
       "keywords": []
     },
@@ -337,27 +203,7 @@
       "keywords": []
     },
     {
-      "name": "Team Leadership",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "SQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Programming",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Python",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Windows",
       "level": "",
       "keywords": []
     },
@@ -367,27 +213,7 @@
       "keywords": []
     },
     {
-      "name": "XML",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Databases",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "HTML",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Android",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Front-end Development",
+      "name": "Frontend Development",
       "level": "",
       "keywords": []
     }
