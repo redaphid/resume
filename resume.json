@@ -16,7 +16,7 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "ACoAAAEF9boBYVRw_DfDRbWqmWd3L3FIBhEKDpc",
+        "username": "Aaron Herres",
         "url": "https://www.linkedin.com/in/ACoAAAEF9boBYVRw_DfDRbWqmWd3L3FIBhEKDpc/"
       }
     ]
@@ -25,10 +25,10 @@
     {
       "company": "Magic Leap",
       "endDate": "2021-04-30",
-      "highlights": [],
+      "highlights": ["Golang", "C++", "Javascript", "Typescript"],
       "position": "Development Team Lead",
       "startDate": "2019-06-30",
-      "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",
+      "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",      
       "website": "https://www.linkedin.com/company/magic-leap-inc-/"
     },
     {

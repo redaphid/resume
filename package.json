@@ -1,0 +1,30 @@
+{
+  "name": "aaron-resume",
+  "version": "1.0.0",
+  "description": "Making my resume a fancy project so I don't hate editing it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",    
+    "generate": "npx resume-cli export --theme macchiato resume.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redaphid/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "redaphid <iam@aaronherres.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redaphid/resume/issues"
+  },
+  "homepage": "https://github.com/redaphid/resume#readme",
+  "dependencies": {
+    "jsonresume-theme-class": "^0.1.2",
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-even": "^0.13.0",
+    "jsonresume-theme-macchiato": "^1.1.0",
+    "resume-cli": "^3.0.5"
+  }
+}
