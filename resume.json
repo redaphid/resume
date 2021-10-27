@@ -1,0 +1,406 @@
+{
+  "basics": {
+    "name": "Aaron Herres",
+    "label": "A full-stack, team-building  software developer with an interest in software architecture and coding philosophy. ",
+    "picture": "",
+    "email": "iam@aaronherres.com",
+    "phone": "",
+    "website": "",
+    "summary": "A software developer with over 15 years of experience building software. \n\nA generalist, Aaron has worked on a variety of projects ranging from startups to large corporations. \n\nAaron's passion for generalism and minimalist design has allowed him to work on platforms ranging from microcontrollers to large cloud computing clusters with 4+ million messages a minute.\n\nHe does both backend and frontend development, and has worked professionally with over 10 different programming languages.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "ACoAAAEF9boBYVRw_DfDRbWqmWd3L3FIBhEKDpc",
+        "url": "https://www.linkedin.com/in/ACoAAAEF9boBYVRw_DfDRbWqmWd3L3FIBhEKDpc/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Loqwai",
+      "endDate": "",
+      "highlights": [],
+      "position": "Co-Founder/Managing Partner",
+      "startDate": "2014-05-31",
+      "summary": "Full-stack, any-language software consulting for startups and other interesting projects.",
+      "website": "https://www.linkedin.com/company/loqwai/"
+    },
+    {
+      "company": "Magic Leap",
+      "endDate": "2021-04-30",
+      "highlights": [],
+      "position": "Development Team Lead",
+      "startDate": "2019-06-30",
+      "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",
+      "website": "https://www.linkedin.com/company/magic-leap-inc-/"
+    },
+    {
+      "company": "Citrix",
+      "endDate": "2017-12-31",
+      "highlights": [],
+      "position": "Staff Software Engineer",
+      "startDate": "2014-12-31",
+      "summary": "Full stack design and development of the \"Octoblu Designer\", a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely. Design of the domain-specific language used by the Octoblu Designer.",
+      "website": "https://www.linkedin.com/company/citrix/"
+    },
+    {
+      "company": "Octoblu",
+      "endDate": "2017-11-30",
+      "highlights": [],
+      "position": "Software Consultant",
+      "startDate": "2014-03-31",
+      "summary": "Full stack development of  \"Meshblu\", an  internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial front end called \"Octoblu\" mentioned in the Citrix section.",
+      "website": "https://www.linkedin.com/company/octoblu/"
+    },
+    {
+      "company": "Unicon, Inc.",
+      "endDate": "2014-05-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2013-08-31",
+      "summary": "Development and consulting work for higher education portal platforms.",
+      "website": "https://www.linkedin.com/company/unicon-inc/"
+    },
+    {
+      "company": "Omedix",
+      "endDate": "2013-04-30",
+      "highlights": [],
+      "position": "Software Architect",
+      "startDate": "2010-03-31",
+      "summary": "Helped design Omedix Engage platform, which managed patient and practice portals for the healthcare industry. Wrote systems that handled extremely sensitive healthcare data securely.\n\nDesigned the \"Black Box\", a physical network appliance installed in the datacenter of a medical practice that securely connected their electronic medical system to the Omedix Engage platform.\n\nDesigned 2 domain-specific languages to build custom patient forms for medical practices.\n\nActed as a liaison for Omedix Team India, offering tutorials and designs to teams on the other side of the world!",
+      "website": "https://www.linkedin.com/company/omedix/"
+    },
+    {
+      "company": "Coherence-Based Modeling of Cultural Change and Political Violence (CCPV) project",
+      "endDate": "2010-08-31",
+      "highlights": [],
+      "position": "Software Architect",
+      "startDate": "2009-01-31",
+      "summary": "Designed and developed an intelligent, plugin based web crawler that used existing algorithms from social sciences to extract semantic meaning from natural language conversations on the web. \n\nInformally described as \"finding terrorists on the internet\", the system would trace the origin and spread of extremist ideas. Funded by  the Air Force Office of Scientific Research",
+      "website": ""
+    },
+    {
+      "company": "Laboratory for Interactive Learning Technologies",
+      "endDate": "2009-01-31",
+      "highlights": [],
+      "position": "Research Assistant",
+      "startDate": "2008-08-31",
+      "summary": "Performed research and development on augmented reality for mobile platforms. Designed an application to recognize nametags of users and augmented nametags with information of the wearer of the nametag.",
+      "website": ""
+    },
+    {
+      "company": "Avanade",
+      "endDate": "2008-08-31",
+      "highlights": [],
+      "position": "Solution Developer",
+      "startDate": "2007-08-31",
+      "summary": "Contract developer for Microsoft, working on disaster recovery and EULA-generation projects in C# and ASP.NET",
+      "website": "https://www.linkedin.com/company/avanade/"
+    },
+    {
+      "company": "University of Puget Sound",
+      "endDate": "2007-05-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2003-08-31",
+      "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers via the SMTP protocol.",
+      "website": "https://www.linkedin.com/school/univpugetsound/"
+    },
+    {
+      "company": "Software Development Alternatives",
+      "endDate": "2003-01-31",
+      "highlights": [],
+      "position": "Software Developer",
+      "startDate": "2001-12-31",
+      "summary": "Tested and fixed bugs for the Flight Management System of Airbus A320 aircraft, including some feature development. Subcontracted from Honeywell.",
+      "website": ""
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Hawaii at Manoa",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2008-12-31",
+      "endDate": "2010-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "University of Puget Sound",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2003-12-31",
+      "endDate": "2007-12-31",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Services",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Magic Leap",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Test Driven Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Application Programming Interfaces",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MVC",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "OOP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Back-End Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CoffeeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Augmented Reality (AR)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "DB2",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Go (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": ".NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TFS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "API Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SSIS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Shotokan Karate",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MVC Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Building",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Security",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LINQ",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "iBatis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microservices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Android",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Nick Cunningham",
+      "reference": "Aaron is the smartest developer I've ever met. He has been a mentor to me, introducing me to huge eye opening concepts as well as particular details I've overlooked. If Aaron is on your team you are extremely fortunate, as it will be a long time before you again meet someone at his level of intelligence."
+    }
+  ]
+}
