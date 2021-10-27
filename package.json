@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx live-server",
-    "generate": "npx resume-cli export --theme macchiato resume.html"
+    "generate": "npx resume-cli export --theme macchiato index.html"
   },
   "repository": {
     "type": "git",
