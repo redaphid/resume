@@ -29,5 +29,17 @@
     "phone": "602-420-3865",
     "summary": "A software developer with 20 years of experience building software. A generalist, who has worked on a variety of projects ranging from startups to large corporations, microcontrollers to microservice architecture. "
   },
+  "education": [
+    {
+      "courses": [],
+      "institution": "University of Hawaii at Manoa",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2008-12-31",
+      "endDate": "2010-12-31",
+      "gpa": "",
+      "url": "https://manoa.hawaii.edu/"
+    }
+  ],
   "meta": {}
 }
