@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx live-server",
+    "start": "npx live-server ./out",
     "validate": "ajv validate -s ./resume-schema -d resume.json",
-    "generate": "npx resume-cli export index.html"
+    "generate": "./scripts/generate-all.fish"
   },
   "repository": {
     "type": "git",
