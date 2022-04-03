@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx live-server",
     "validate": "ajv validate -s ./resume-schema -d resume.json",
-    "generate": "npx resume-cli export --theme macchiato index.html"
+    "generate": "npx resume-cli export index.html"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,7 @@
   },
   "homepage": "https://github.com/redaphid/resume#readme",
   "dependencies": {
-    "ajv-cli": "^5.0.0",
-    "jsonresume-theme-class": "^0.1.2",
-    "jsonresume-theme-elegant": "^1.16.1",
-    "jsonresume-theme-even": "^0.13.0",
-    "jsonresume-theme-macchiato": "^1.1.0",
+    "ajv-cli": "^5.0.0",   
     "resume-cli": "^3.0.5"
   }
 }
