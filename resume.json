@@ -13,9 +13,19 @@
     },
     "profiles": [
       {
-        "network": "LinkedIn",
+        "network": "linkedin",
         "username": "Aaron Herres",
         "url": "https://www.linkedin.com/in/ACoAAAEF9boBYVRw_DfDRbWqmWd3L3FIBhEKDpc/"
+      },
+      {
+        "network": "twitter",
+        "username": "redaphid",
+        "url": "https://twitter.com/redaphid"
+      },
+      {
+        "network": "github",
+        "username": "redaphid",
+        "url": "github.com/redaphid"
       }
     ]
   },
