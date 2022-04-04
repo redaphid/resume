@@ -18,18 +18,29 @@
         "url": "https://linkedin.com/in/aaron-herres-0a28bb5/"
       },
       {
-        "network": "twitter",
-        "username": "redaphid",
-        "url": "https://twitter.com/redaphid"
+        "network": "github",
+        "username": "redaphid"
       },
       {
-        "network": "github",
-        "username": "redaphid",
-        "url": "github.com/redaphid"
+        "network": "twitter",
+        "username": "redaphid"
       }
     ]
   },
   "work": [
+    {
+      "company": "Loqwai",
+      "name": "Loqwai",
+      "technologies": [
+        "Typescript",
+        "NFT",
+        "IPFS"
+      ],
+      "position": "Software Consultant for Protocol Labs",
+      "startDate": "2021-11-01",
+      "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",
+      "website": "https://www.linkedin.com/company/magic-leap-inc-/"
+    },
     {
       "company": "Magic Leap",
       "name": "Magic Leap",
