@@ -70,8 +70,8 @@
       ],
       "position": "Staff Software Engineer",
       "startDate": "2014-12-31",
-      "summary": "Full stack design and development of the \"Octoblu Designer\", a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely. Design of the domain-specific language used by the Octoblu Designer.",
-      "website": "https://www.linkedin.com/company/citrix/"
+      "summary": "Full stack design and development of the \"Octoblu Designer\", a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely. Design of the domain-specific language used by the Octoblu Designer. The designer ran on top of Meshblu, the open source IoT platform described below.",
+      "website": "https://octoblu.github.io/"
     },
     {
       "company": "Octoblu",
@@ -86,7 +86,7 @@
       "position": "Software Consultant",
       "startDate": "2014-03-31",
       "summary": "Full stack development of  \"Meshblu\", an  internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial front end called \"Octoblu\" mentioned in the Citrix section.",
-      "website": "https://www.linkedin.com/company/octoblu/"
+      "website": "https://octoblu.github.io/"
     },
     {
       "company": "Unicon, Inc.",
@@ -99,7 +99,7 @@
       ],
       "position": "Software Developer",
       "startDate": "2013-08-31",
-      "summary": "Development and consulting work for higher education portal platforms.",
+      "summary": "Developed and consulted for an open source education portal. Worked on the security on the platform, as well as front and backend work with Java/Spring.",
       "website": "https://www.unicon.net/"
     },
     {
@@ -126,8 +126,8 @@
       ],
       "position": "Software Developer",
       "startDate": "2009-01-31",
-      "summary": "Designed and developed an intelligent, plugin based web crawler that used existing algorithms from social sciences to extract semantic meaning from natural language conversations on the web. \n\nInformally described as \"finding terrorists on the internet\", the system would trace the origin and spread of extremist ideas. Funded by  the Air Force Office of Scientific Research",
-      "website": ""
+      "summary": "Designed and developed an intelligent, plugin-based web crawler that used existing algorithms from social sciences to extract semantic meaning from natural language conversations on the web. \n\nInformally described as \"finding terrorists on the internet\", the system would trace the origin and spread of extremist ideas. Funded by  the Air Force Office of Scientific Research",
+      "website": "https://en.wikipedia.org/wiki/Laboratory_for_Interactive_Learning_Technologies"
     },
     {
       "company": "Laboratory for Interactive Learning Technologies",
@@ -141,7 +141,7 @@
       "position": "Research Assistant",
       "startDate": "2008-08-31",
       "summary": "Performed research and development on augmented reality for mobile platforms. Designed an application to recognize nametags of users and augmented nametags with information of the wearer of the nametag.",
-      "website": ""
+      "website": "https://en.wikipedia.org/wiki/Laboratory_for_Interactive_Learning_Technologies"
     },
     {
       "company": "Avanade",
@@ -168,7 +168,7 @@
       ],
       "position": "Software Developer",
       "startDate": "2003-08-31",
-      "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers via the SMTP protocol.",
+      "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers via a protocol whose name escapes me (It's been a while).",
       "website": "https://www.pugetsound.edu/"
     },
     {
@@ -238,6 +238,9 @@
       "name": "Software Design",
       "level": "",
       "technologies": []
+    },
+    {
+      "name": "And others..."
     }
   ],
   "languages": [
