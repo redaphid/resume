@@ -8,7 +8,7 @@
     "start": "npx live-server ./out",
     "validate": "ajv validate -s ./resume-schema -d resume.json",
     "generate": "./scripts/generate-all.fish",
-    "watch": "npx nodemon --watch ./resume.json --exec ./scripts/generate-all.fish"
+    "watch": "npx nodemon --watch ./resume.json  --ignore ./out --exec ./scripts/generate-all.fish"
   },
   "repository": {
     "type": "git",

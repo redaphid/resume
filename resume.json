@@ -6,7 +6,7 @@
     "email": "iam@aaronherres.com",
     "phone": "602-420-3865",
     "website": "",
-    "summary": "A software developer with 20 years of experience building software. \n\nA generalist, Aaron has worked on a variety of projects ranging from startups to large corporations. \n\nAaron's passion for generalism and minimalist design has allowed him to work on platforms ranging from microcontrollers to large cloud computing clusters to web3 technologies",
+    "summary": "A software developer with 20 years of experience. \n\nA generalist, Aaron has worked on a variety of projects ranging from startups to large corporations. \n\nAaron's passion for generalism and minimalist design has allowed him to work on platforms ranging from microcontrollers to large cloud computing clusters to web3 technologies",
     "location": {
       "countryCode": "US",
       "address": "United States"
@@ -19,11 +19,13 @@
       },
       {
         "network": "github",
-        "username": "redaphid"
+        "username": "redaphid",
+        "url": "https://github.com/redaphid"
       },
       {
         "network": "twitter",
-        "username": "redaphid"
+        "username": "redaphid",
+        "url": "https://twitter.com/redaphid"
       }
     ]
   },
@@ -38,13 +40,13 @@
       ],
       "position": "Software Consultant for Protocol Labs",
       "startDate": "2021-11-01",
-      "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",
-      "website": "https://www.linkedin.com/company/magic-leap-inc-/"
+      "summary": "Currently working with Protocol Labs on nft.storage, a web3 technology on top of IPFS. nft.storage offers 1TB of free storage for NFT data, as well as automatically minting NFTs for files uploaded.",
+      "website": "https://nft.storage"
     },
     {
       "company": "Magic Leap",
       "name": "Magic Leap",
-      "endDate": "2021-04-30",
+      "endDate": "2021-04-01",
       "technologies": [
         "Node",
         "Golang",
@@ -52,7 +54,7 @@
         "Javascript",
         "Typescript"
       ],
-      "position": "Development Team Lead",
+      "position": "Team Lead",
       "startDate": "2019-06-30",
       "summary": "Acted as a lead developer for the backend of a collaborative augmented reality cloud platform. Helped form the culture of the team, as well as develop and architect the product.\n\nInstilled an effective, collaborative team culture featuring test-driven Unix philosophy with an agile development cycle.\n\nStitched together the real and virtual worlds via the magic of augmented reality goggles.\n\nFocused on making augmented reality less lonely by enabling shared experiences - persistent augmented reality worlds multiple users could see and interact with.",
       "website": "https://www.linkedin.com/company/magic-leap-inc-/"
@@ -114,7 +116,7 @@
       "website": "https://www.linkedin.com/company/omedix/"
     },
     {
-      "company": "Coherence-Based Modeling of Cultural Change and Political Violence (CCPV) project",
+      "company": "University of Hawaii Manoa",
       "name": "Coherence-Based Modeling of Cultural Change and Political Violence (CCPV) project",
       "endDate": "2010-08-31",
       "technologies": [
@@ -122,7 +124,7 @@
         "HTML",
         "Python"
       ],
-      "position": "Software Architect",
+      "position": "Research Assistant",
       "startDate": "2009-01-31",
       "summary": "Designed and developed an intelligent, plugin based web crawler that used existing algorithms from social sciences to extract semantic meaning from natural language conversations on the web. \n\nInformally described as \"finding terrorists on the internet\", the system would trace the origin and spread of extremist ideas. Funded by  the Air Force Office of Scientific Research",
       "website": ""
