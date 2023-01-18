@@ -4,7 +4,6 @@
   "description": "Making my resume a fancy project so I don't hate editing it",
   "main": "index.js",
   "scripts": {
-
     "start": "npx live-server ./out",
     "validate": "ajv validate -s ./resume-schema -d resume.json",
     "generate": "./scripts/generate-all.fish",
@@ -25,13 +24,16 @@
   "homepage": "https://github.com/redaphid/resume#readme",
   "dependencies": {
     "ajv-cli": "^5.0.0",
-    "resume-cli": "^3.0.5",
     "jsonresume-theme-ace": "^1.1.0",
     "jsonresume-theme-eloquent": "^4.1.0",
     "jsonresume-theme-even": "^0.17.0",
+    "jsonresume-theme-onepage": "^0.0.3",
     "jsonresume-theme-short": "^0.1.7",
     "jsonresume-theme-spartan": "^0.3.0",
-    "jsonresume-theme-onepage": "^0.0.3",    
-    "jsonresume-theme-stackoverflow": "^1.4.0"
+    "jsonresume-theme-stackoverflow": "^1.4.0",
+    "resume-cli": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
