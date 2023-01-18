@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Aaron Herres",
-    "label": "A full-stack, team-building  software developer with an interest in software architecture and coding philosophy. ",
+    "label": "A full-stack, team-building software developer with an interest in software architecture and coding philosophy. ",
     "picture": "",
     "email": "iam@aaronherres.com",
     "phone": "602-420-3865",
     "website": "",
-    "summary": "A software developer with 20 years of experience. \n\nA generalist, Aaron has worked on a variety of projects ranging from startups to large corporations. \n\nAaron's passion for generalism and minimalist design has allowed him to work on platforms ranging from microcontrollers to large cloud computing clusters to web3 technologies",
+    "summary": "A software developer with over 20 years experience. A generalist, Aaron has worked in a variety of work environments ranging from startups to large corporations. Aaron's passion for generalism and minimalist design has allowed him to work on projects ranging from microcontrollers to the development of on-premise large cloud computing clusters. Aaron also loves leading teams, as it gives him a captive audience to discuss software development philosophy and exercise his strategies for delivering low-defect software quickly.",
     "location": {
       "countryCode": "US",
       "address": "United States"
@@ -35,12 +35,13 @@
       "name": "Loqwai",
       "technologies": [
         "Typescript",
-        "NFT",
+        "Microcontrollers",
+        "C++",
         "IPFS"
       ],
-      "position": "Software Consultant for Protocol Labs",
+      "position": "Software Consultant",
       "startDate": "2021-11-01",
-      "summary": "Currently working with Protocol Labs on nft.storage, a web3 technology on top of IPFS. nft.storage offers 1TB of free storage for NFT data, as well as automatically minting NFTs for files uploaded.",
+      "summary": "Currently working as a self-employed software consultant on a few projects for clients, including product design consulting for startups, microcontroller work for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project.",
       "website": "https://nft.storage"
     },
     {

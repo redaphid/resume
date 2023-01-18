@@ -1,2 +1,0 @@
-[ ] remove Java
-[ ] update status
