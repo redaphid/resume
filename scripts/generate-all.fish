@@ -1,5 +1,6 @@
 #!/usr/bin/env fish
 nvm use 16
+mkdir -p out
 # rm out/*
 for t in (cat ./themes.json | jq -r .[])
   echo "generating theme $t"

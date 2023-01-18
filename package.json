@@ -4,10 +4,10 @@
   "description": "Making my resume a fancy project so I don't hate editing it",
   "main": "index.js",
   "scripts": {
-    "start": "npx live-server ./out",
+    "start": "live-server ./out",
     "validate": "ajv validate -s ./resume-schema -d resume.json",
     "generate": "./scripts/generate-all.fish",
-    "watch": "npx nodemon --watch ./resume.json  --ignore ./out --exec ./scripts/generate-all.fish"
+    "watch": "nodemon --watch ./resume.json  --ignore ./out --exec ./scripts/generate-all.fish"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "resume-cli": "^3.0.5"
   },
   "devDependencies": {
+    "live-server": "^1.2.2",
     "nodemon": "^2.0.20"
   }
 }
