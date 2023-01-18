@@ -41,8 +41,7 @@
       ],
       "position": "Software Consultant",
       "startDate": "2021-11-01",
-      "summary": "Currently working as a self-employed software consultant on a few projects for clients, including product design consulting for startups, microcontroller work for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project.",
-      "website": "https://nft.storage"
+      "summary": "Currently working as a self-employed software consultant on a few projects for clients, including product design consulting for startups, microcontroller development and architecture for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project."
     },
     {
       "company": "Magic Leap",
@@ -63,7 +62,7 @@
     {
       "company": "Citrix",
       "name": "Citrix",
-      "endDate": "2017-12-31",
+      "endDate": "2018-12-31",
       "technologies": [
         "C++",
         "Javascript",
@@ -71,7 +70,7 @@
       ],
       "position": "Staff Software Engineer",
       "startDate": "2014-12-31",
-      "summary": "Full stack design and development of the \"Octoblu Designer\", a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely. Design of the domain-specific language used by the Octoblu Designer. The designer ran on top of Meshblu, the open source IoT platform described below.",
+      "summary": "Full stack design and development of the Octoblu Designer, a flow-based visual editor that connects of hundreds of different devices and services to each other without code. \n\nFlows run in the cloud, allowing execution of arbitrary flows created by users securely and efficently due to our massively parallelizable architecture. Design of the domain-specific language used by the Octoblu Designer. The designer ran on top of Meshblu, the open source IoT platform described below.",
       "website": "https://octoblu.github.io/"
     },
     {
@@ -86,7 +85,7 @@
       ],
       "position": "Software Consultant",
       "startDate": "2014-03-31",
-      "summary": "Full stack development of  \"Meshblu\", an  internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial front end called \"Octoblu\" mentioned in the Citrix section.",
+      "summary": "Full stack development of Meshblu, an internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial frontend \"Octoblu\" mentioned in the Citrix section. The public instance of the Meshblu platform processed over 4 million messages per hour.",
       "website": "https://octoblu.github.io/"
     },
     {
@@ -113,7 +112,7 @@
       ],
       "position": "Software Architect",
       "startDate": "2010-03-31",
-      "summary": "Helped design Omedix Engage platform, which managed patient and practice portals for the healthcare industry. Wrote systems that handled extremely sensitive healthcare data securely.\n\nDesigned the \"Black Box\", a physical network appliance installed in the datacenter of a medical practice that securely connected their electronic medical system to the Omedix Engage platform.\n\nDesigned 2 domain-specific languages to build custom patient forms for medical practices.\n\nActed as a liaison for Omedix Team India, offering tutorials and designs to teams on the other side of the world!",
+      "summary": "Helped design the Omedix Engage platform, which managed patient and practice portals for the healthcare industry. Wrote systems that handled sensitive healthcare data securely.\n\nDesigned the \"Black Box\", a physical network appliance installed in the datacenter of a medical practice that securely connected their electronic medical system to the Omedix Engage platform.\n\nDesigned 2 domain-specific languages to build custom patient forms for medical practices.\n\nActed as a liaison for Omedix Team India, offering tutorials and designs to teams on the other side of the world.",
       "website": "https://www.linkedin.com/company/omedix/"
     },
     {
