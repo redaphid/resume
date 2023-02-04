@@ -168,7 +168,7 @@
       ],
       "position": "Software Developer",
       "startDate": "2003-08-31",
-      "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers via a protocol whose name escapes me (It's been a while).",
+      "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers through the SNMP protocol.",
       "website": "https://www.pugetsound.edu/"
     },
     {
