@@ -1,5 +1,3 @@
-,
-
 Full stack research, design, and development of two major initiatives: An open source IoT platform ("Meshblu") and a customer-facing application that allows users to create flows between devices and services without writing code ("Octoblu Designer"). Both of these required the creation of at least one domain-specific language.
 
 
@@ -15,3 +13,5 @@ Flows run in the cloud, allowing execution of arbitrary flows created by users s
 Full stack development of Meshblu, an internet of things platform, and development work on practical solutions based on that platform.
 
 Meshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.
+
+I did resarch, design, and development on these projects and multiple connectors within, as well as led teams in the development of each.
