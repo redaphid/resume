@@ -14,4 +14,4 @@ Full stack development of Meshblu, an internet of things platform, and developme
 
 Meshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.
 
-I did resarch, design, and development on these projects and multiple connectors within, as well as led teams in the development of each.
+I did research, design, and development on these projects and multiple connectors within, as well as led teams in the development of each.
