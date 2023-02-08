@@ -191,8 +191,8 @@
       "institution": "University of Hawaii at Manoa",
       "area": "Computer Science",
       "studyType": "Master of Science",
-      "startDate": "2008-12-31",
-      "endDate": "2010-12-31",
+      "startDate": "2008-08-01",
+      "endDate": "2010-05-01",
       "gpa": "",
       "courses": []
     },
@@ -200,8 +200,8 @@
       "institution": "University of Puget Sound",
       "area": "Computer Science",
       "studyType": "Bachelor of Science",
-      "startDate": "2003-12-31",
-      "endDate": "2007-12-31",
+      "startDate": "2003-08-01",
+      "endDate": "2007-05-01",
       "gpa": "",
       "courses": []
     }
