@@ -111,7 +111,7 @@
         "Javascript"
       ],
       "position": "Software Architect",
-      "startDate": "2010-03-31",
+      "startDate": "2010-09-01",
       "summary": "Helped design the Omedix Engage platform, which managed patient and practice portals for the healthcare industry. Wrote systems that handled sensitive healthcare data securely.\n\nDesigned the \"Black Box\", a physical network appliance installed in the datacenter of a medical practice that securely connected their electronic medical system to the Omedix Engage platform.\n\nDesigned 2 domain-specific languages to build custom patient forms for medical practices.\n\nActed as a liaison for Omedix Team India, offering tutorials and designs to teams on the other side of the world.",
       "website": "https://www.linkedin.com/company/omedix/"
     },
@@ -146,14 +146,14 @@
     {
       "company": "Avanade",
       "name": "Avanade",
-      "endDate": "2008-08-31",
+      "endDate": "2008-08-01",
       "technologies": [
         "C#",
         ".NET",
         "SQL"
       ],
       "position": "Solution Developer",
-      "startDate": "2007-08-31",
+      "startDate": "2007-08-01",
       "summary": "Contract developer for Microsoft, working on disaster recovery and EULA-generation projects in C# and ASP.NET",
       "website": "https://www.avanade.com/"
     },
