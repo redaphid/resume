@@ -12,7 +12,17 @@
     import { h, Component, render } from 'https://esm.sh/preact'
     import htm from 'https://esm.sh/htm'
     // fetch resume
-    const html = htm.bind(h)
+    const App = ({resume}) => {
+      return html`
+          <article>
+            <${Basics} basics=${resume.basics} />
+            <${Profiles} profiles=${resume.basics.profiles}/>
+            <${Works} works=${resume.work} />
+            <${Educations} education=${resume.education} />
+            <${Skills} skills=${resume.skills}/>
+          </article>
+          `
+    }
 
     const Basics = ({ basics }) => {
       return html`
@@ -130,18 +140,7 @@
       `
     }
 
-    const App = ({resume}) => {
-      return html`
-          <article>
-            <${Basics} basics=${resume.basics} />
-            <${Profiles} profiles=${resume.basics.profiles}/>
-            <${Works} works=${resume.work} />
-            <${Educations} education=${resume.education} />
-            <${Skills} skills=${resume.skills}/>
-          </article>
-          `
-    }
-
+    const html = htm.bind(h)
     const res = await fetch('resume.json').then(res => res.json())
     render(html`<${App} resume=${res}/>`, document.body)
   </script>
