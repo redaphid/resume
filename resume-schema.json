@@ -143,6 +143,15 @@
               "type": "string",
               "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
             }
+          },
+          "skills": {
+            "type": "array",
+            "description": "Specify skills used on the job",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. C++"
+            }
           }
         }
       }
@@ -334,8 +343,14 @@
             "description": "e.g. Web Development"
           },
           "level": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10,
+            "description": "how proficient are you in this skill from 0-10"
+          },
+          "type": {
             "type": "string",
-            "description": "e.g. Master"
+            "description": "e.g. Programming Language"
           },
           "keywords": {
             "type": "array",
