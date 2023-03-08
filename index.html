@@ -6,15 +6,12 @@
       font-family: sans-serif;
       font-size: 16px;
     }
-
   </style>
   <script type="module">
-    import { h, Component, render } from 'https://esm.sh/preact'
-    import htm from 'https://esm.sh/htm'
     // fetch resume
     const App = ({resume}) => {
       return html`
-          <div>
+          <div class="App">
             <${Basics} basics=${resume.basics} />
             <${Profiles} profiles=${resume.basics.profiles}/>
             <${Works} works=${resume.work} />
@@ -26,7 +23,7 @@
 
     const Basics = ({ basics }) => {
       return html`
-        <section>
+        <section class="Basics">
           <h3>Basics</h3>
           <h4>${basics.name}</h1>
           <h5>${basics.label}</h2>
@@ -39,7 +36,7 @@
 
     const Profiles = ({ profiles }) => {
       return html`
-        <section>
+        <section class="Profiles">
           <h3>Profiles</h3>
           <ul>
             ${profiles.map(profile => html`
@@ -54,7 +51,7 @@
 
     const Profile = ({ profile }) => {
       return html`
-        <div>
+        <div class="Profile">
           <a href=${profile.url}>${profile.network}</a>
         </div>
       `
@@ -62,7 +59,7 @@
 
     const Works = ({ works }) => {
       return html`
-        <section>
+        <section class="Works">
           <h3>Work</h3>
           <ul>
             ${works.map(work => html`
@@ -77,7 +74,7 @@
 
     const Work = ({ work }) => {
       return html`
-      <div>
+      <div class="Work">
           <h4>${work.company}</h4>
           <p>${work.position}</p>
           <p>${work.website}</p>
@@ -90,7 +87,7 @@
 
     const Educations = ({ education }) => {
       return html`
-        <section>
+        <section class="Educations">
           <h3>Education</h3>
           <ul>
             ${education.map(edu => html`
@@ -105,7 +102,7 @@
 
     const Education = ({ education }) => {
       return html`
-        <div>
+        <div class="Education">
           <h4>${education.institution}</h4>
           <p>${education.area}</p>
           <p>${education.studyType}</p>
@@ -117,7 +114,7 @@
     }
     const Skills = ({skills})=>{
       return html`
-        <section>
+        <section class="Skills">
           <h3>Skills</h3>
           <ul>
             ${skills.map(skill => html`
@@ -132,7 +129,7 @@
 
     const Skill = ({skill}) => {
       return html`
-        <div>
+        <div class="Skill">
           <h4>${skill.name}</h4>
           <p>${skill.level}</p>
           <p>${skill.keywords}</p>
@@ -140,6 +137,8 @@
       `
     }
 
+    import { h, render } from 'https://esm.sh/preact'
+    import htm from 'https://esm.sh/htm'
     const html = htm.bind(h)
     const res = await fetch('resume.json').then(res => res.json())
     render(html`<${App} resume=${res}/>`, document.body)
@@ -147,5 +146,24 @@
 </header>
 
 <body></body>
-
+<style>
+  .App {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Basics {
+    grid-column: 1/2;
+  }
+  .Profiles {
+    grid-column: 2/3;
+  }
+  /* Skills go in the left column */
+  .Skills {
+    grid-column: 1/2;
+  }
+  /* Work and Education go in the center column */
+  .Works {
+    grid-column: 2/3;
+  }
+</style>
 </html>

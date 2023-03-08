@@ -1,2 +1,2 @@
 # resume
-Let's see if JSON resume is cool enough to distract me from actually writing it!
+[design inspiration](https://novoresume.com/career-blog/resume-formats#reverse-chronological-resume-format)
