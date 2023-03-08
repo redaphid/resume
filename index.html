@@ -15,7 +15,7 @@
       return html`
           <div class="Resume">
             <${Basics} basics=${resume.basics} />
-            <div class="info">
+            <div class="Info">
               <${Profiles} profiles=${resume.basics.profiles} />
               <${Skills} skills=${resume.skills}/>
               <${Educations} education=${resume.education} />
@@ -162,7 +162,11 @@
     grid-template-areas:
       'basics basics'
       'info works';
-    grid-auto-flow: column;
+  }
+  /* flex the contents inside info */
+  .Info {
+    display: flex;
+    flex-direction: column;
   }
   /* Debug grid outline */
   .Basics {
@@ -174,14 +178,17 @@
     grid-area: profiles;
   }
   .Skills {
+    flex: 1;
     background-color:hsla(215, 44%, 51%, 0.311);
     grid-area: skills;
   }
   .Educations {
+    flex: 1;
     background-color:hsla(115, 44%, 21%, 0.311);
     grid-area: educations;
   }
   .Works {
+    flex: 1;
     background-color:hsla(45, 44%, 51%, 0.311);
     grid-area: works;
   }
