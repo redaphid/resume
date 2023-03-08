@@ -9,14 +9,15 @@
   </style>
   <script type="module">
     // fetch resume
-    const App = ({resume}) => {
+    const Resume = ({resume}) => {
       return html`
           <div class="App">
             <${Basics} basics=${resume.basics} />
             <${Profiles} profiles=${resume.basics.profiles}/>
+            <${Skills} skills=${resume.skills}/>
+
             <${Works} works=${resume.work} />
             <${Educations} education=${resume.education} />
-            <${Skills} skills=${resume.skills}/>
           </div>
           `
     }
@@ -141,29 +142,53 @@
     import htm from 'https://esm.sh/htm'
     const html = htm.bind(h)
     const res = await fetch('resume.json').then(res => res.json())
-    render(html`<${App} resume=${res}/>`, document.body)
+    render(html`<${Resume} resume=${res}/>`, document.body)
   </script>
 </header>
 
 <body></body>
 <style>
-  .App {
-    display:grid;
+  /*
+    Resume is a grid the size of a US letter page .
+    On the left side, we have the basics, skills, and educations.
+    On the right side, we have works
+    The basics section includes a profile image
+  */
+  .Resume {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'basics skills'
+      'profiles works'
+      'educations works';
   }
   .Basics {
-    grid-column: 1/2;
+    grid-area: basics;
   }
   .Profiles {
-    grid-column: 2/3;
+    grid-area: profiles;
   }
-  /* Skills go in the left column */
   .Skills {
-    grid-column: 1/2;
+    grid-area: skills;
   }
-  /* Work and Education go in the center column */
   .Works {
-    grid-column: 2/3;
+    grid-area: works;
   }
+  .Educations {
+    grid-area: educations;
+  }
+  .Profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .Profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
 </style>
 </html>
