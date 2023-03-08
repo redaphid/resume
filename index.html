@@ -13,11 +13,12 @@
     The basics section includes a profile image
   */
   .Resume {
+    --emphasize-color:	hsl(327, 59%, 26%);
     display: grid;
     /* grid-template-columns: 1fr 5fr; */
     /* grid-template-rows: 1fr 1fr; */
     grid-template-areas:
-      'basics basics'
+      'logo basics'
       'info works';
     /*
     give each column a subtle border
@@ -39,7 +40,8 @@
 
   /* Debug grid outline */
   .Basics {
-    background-color:hsla(0, 70%, 37%, 0.311);
+    background-color: var(--emphasize-color);
+    color: #fff;
     padding: 1em;
     grid-area: basics;
   }
@@ -79,9 +81,8 @@
     const Basics = ({ basics }) => {
       return html`
         <section class="Basics">
-          <h3>Basics</h3>
-          <h4>${basics.name}</h1>
-          <h5>${basics.label}</h2>
+          <h1>${basics.name}</h1>
+          <h3>${basics.label}</h3>
           <p>${basics.email}</p>
           <p>${basics.phone}</p>
           <p>${basics.website}</p>
