@@ -14,13 +14,13 @@
     // fetch resume
     const App = ({resume}) => {
       return html`
-          <article>
+          <div>
             <${Basics} basics=${resume.basics} />
             <${Profiles} profiles=${resume.basics.profiles}/>
             <${Works} works=${resume.work} />
             <${Educations} education=${resume.education} />
             <${Skills} skills=${resume.skills}/>
-          </article>
+          </div>
           `
     }
 
