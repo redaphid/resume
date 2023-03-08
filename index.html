@@ -6,6 +6,57 @@
       font-family: sans-serif;
       font-size: 16px;
     }
+      /*
+    Resume is a grid the size of a US letter page .
+    On the left side, we have the basics, skills, and educations.
+    On the right side, we have works
+    The basics section includes a profile image
+  */
+  .Resume {
+    display: grid;
+    /* grid-template-columns: 1fr 5fr; */
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas:
+      'basics basics'
+      'info works';
+    /*
+    give each column a subtle border
+    */
+    column-gap: 0.1em;
+    row-gap: 0.1em;
+    background-color: hsla(0, 0%, 0%, 0.1);
+
+  }
+  /* flex the contents inside info */
+  .Info {
+    grid-area: info;
+    height: 100%;
+  }
+
+  .Info > * {
+    padding: 1em;
+  }
+
+  /* Debug grid outline */
+  .Basics {
+    background-color:hsla(0, 70%, 37%, 0.311);
+    padding: 1em;
+    grid-area: basics;
+  }
+  .Profiles {
+    background-color:hsla(215, 44%, 11%, 0.311);
+  }
+  .Skills {
+    background-color:hsla(215, 44%, 51%, 0.311);
+  }
+  .Educations {
+    background-color:hsla(115, 44%, 21%, 0.311);
+  }
+  .Works {
+    background-color:hsla(45, 44%, 51%, 0.311);
+    grid-area: works;
+  }
+
   </style>
   <script type="module">
     import { h, render } from 'https://esm.sh/preact'
@@ -148,50 +199,4 @@
 </header>
 
 <body></body>
-<style>
-  /*
-    Resume is a grid the size of a US letter page .
-    On the left side, we have the basics, skills, and educations.
-    On the right side, we have works
-    The basics section includes a profile image
-  */
-  .Resume {
-    display: grid;
-    /* grid-template-columns: 1fr 5fr; */
-    /* grid-template-rows: 1fr 1fr; */
-    grid-template-areas:
-      'basics basics'
-      'info works';
-  }
-  /* flex the contents inside info */
-  .Info {
-    display: flex;
-    flex-direction: column;
-  }
-  /* Debug grid outline */
-  .Basics {
-    background-color:hsla(0, 70%, 37%, 0.311);
-    grid-area: basics;
-  }
-  .Profiles {
-    background-color:hsla(215, 44%, 11%, 0.311);
-    grid-area: profiles;
-  }
-  .Skills {
-    flex: 1;
-    background-color:hsla(215, 44%, 51%, 0.311);
-    grid-area: skills;
-  }
-  .Educations {
-    flex: 1;
-    background-color:hsla(115, 44%, 21%, 0.311);
-    grid-area: educations;
-  }
-  .Works {
-    flex: 1;
-    background-color:hsla(45, 44%, 51%, 0.311);
-    grid-area: works;
-  }
-
-</style>
 </html>
