@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <header>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+    </style>
     <script type="module">
       import { h, Component, render } from 'https://esm.sh/preact'
       import htm from 'https://esm.sh/htm'
       // fetch resume
       const resume = await fetch('resume.json').then(res => res.json())
-      console.log(resume)
       const html = htm.bind(h)
 
-      function App (props) {
-        return html`<h1>Hello ${props.name}!</h1>`
+      const App = (props) => {
+        return html`<h1> ${props.name}!</h1>`
       }
 
       render(html`<${App} name="World" />`, document.body)
     </script>
   </header>
+  <body></body>
 </html>
