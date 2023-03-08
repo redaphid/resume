@@ -12,81 +12,138 @@
     import { h, Component, render } from 'https://esm.sh/preact'
     import htm from 'https://esm.sh/htm'
     // fetch resume
-    const resume = await fetch('resume.json').then(res => res.json())
     const html = htm.bind(h)
 
-    const Basics = ({basics}) => {
+    const Basics = ({ basics }) => {
       return html`
         <section>
-          <h1>${basics.name}</h1>
-          <h2>${basics.label}</h2>
+          <h3>Basics</h3>
+          <h4>${basics.name}</h1>
+          <h5>${basics.label}</h2>
           <p>${basics.email}</p>
           <p>${basics.phone}</p>
           <p>${basics.website}</p>
         </section>
       `
     }
-    const App = (props) => {
+
+    const Profiles = ({ profiles }) => {
+      return html`
+        <section>
+          <h3>Profiles</h3>
+          <ul>
+            ${profiles.map(profile => html`
+              <li>
+                <${Profile} profile=${profile} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Profile = ({ profile }) => {
+      return html`
+        <div>
+          <a href=${profile.url}>${profile.network}</a>
+        </div>
+      `
+    }
+
+    const Works = ({ works }) => {
+      return html`
+        <section>
+          <h3>Work</h3>
+          <ul>
+            ${works.map(work => html`
+              <li>
+              <${Work} work=${work} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Work = ({ work }) => {
+      return html`
+      <div>
+          <h4>${work.company}</h4>
+          <p>${work.position}</p>
+          <p>${work.website}</p>
+          <p>${work.startDate} - ${work.endDate}</p>
+          <p>${work.summary}</p>
+          <p>${work.highlights}</p>
+        </div>
+      `
+    }
+
+    const Educations = ({ education }) => {
+      return html`
+        <section>
+          <h3>Education</h3>
+          <ul>
+            ${education.map(edu => html`
+              <li>
+                <${Education} education=${edu} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Education = ({ education }) => {
+      return html`
+        <div>
+          <h4>${education.institution}</h4>
+          <p>${education.area}</p>
+          <p>${education.studyType}</p>
+          <p>${education.startDate} - ${education.endDate}</p>
+          <p>${education.gpa}</p>
+          <p>${education.courses}</p>
+        </div>
+      `
+    }
+    const Skills = ({skills})=>{
+      return html`
+        <section>
+          <h3>Skills</h3>
+          <ul>
+            ${skills.map(skill => html`
+              <li>
+                <${Skill} skill=${skill} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Skill = ({skill}) => {
+      return html`
+        <div>
+          <h4>${skill.name}</h4>
+          <p>${skill.level}</p>
+          <p>${skill.keywords}</p>
+        </div>
+      `
+    }
+
+    const App = ({resume}) => {
       return html`
           <article>
             <${Basics} basics=${resume.basics} />
-            <Profiles>
-              <h3>Profiles</h3>
-              <ul>
-                ${resume.basics.profiles.map(profile => html`
-                  <li>
-                    <a href=${profile.url}>${profile.network}</a>
-                  </li>
-                `)}
-              </ul>
-              </Profiles>
-            <Work>
-              <h3>Work</h3>
-              <ul>
-                ${resume.work.map(work => html`
-                  <li>
-                    <h4>${work.company}</h4>
-                    <p>${work.position}</p>
-                    <p>${work.website}</p>
-                    <p>${work.startDate} - ${work.endDate}</p>
-                    <p>${work.summary}</p>
-                    <p>${work.highlights}</p>
-                  </li>
-                `)}
-              </ul>
-            </Work>
-            <Education>
-              <h3>Education</h3>
-              <ul>
-                ${resume.education.map(education => html`
-                  <li>
-                    <h4>${education.institution}</h4>
-                    <p>${education.area}</p>
-                    <p>${education.studyType}</p>
-                    <p>${education.startDate} - ${education.endDate}</p>
-                    <p>${education.gpa}</p>
-                    <p>${education.courses}</p>
-                  </li>
-                `)}
-              </ul>
-              </Education>
-            <Skills>
-              <h3>Skills</h3>
-              <ul>
-                ${resume.skills.map(skill => html`
-                  <li>
-                    <h4>${skill.name}</h4>
-                    <p>${skill.level}</p>
-                    <p>${skill.keywords}</p>
-                  </li>
-                `)}
-              </ul>
+            <${Profiles} profiles=${resume.basics.profiles}/>
+            <${Works} works=${resume.work} />
+            <${Educations} education=${resume.education} />
+            <${Skills} skills=${resume.skills}/>
           </article>
-
           `
     }
 
-    render(html`<${App} name="World" />`, document.body)
+    const res = await fetch('resume.json').then(res => res.json())
+    render(html`<${App} resume=${res}/>`, document.body)
   </script>
 </header>
 
