@@ -13,13 +13,14 @@
 
     const Resume = ({resume}) => {
       return html`
-          <div class="App">
+          <div class="Resume">
             <${Basics} basics=${resume.basics} />
-            <${Profiles} profiles=${resume.basics.profiles}/>
-            <${Skills} skills=${resume.skills}/>
-
+            <div class="info">
+              <${Profiles} profiles=${resume.basics.profiles} />
+              <${Skills} skills=${resume.skills}/>
+              <${Educations} education=${resume.education} />
+            </div>
             <${Works} works=${resume.work} />
-            <${Educations} education=${resume.education} />
           </div>
           `
     }
@@ -156,38 +157,33 @@
   */
   .Resume {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 5fr; */
+    /* grid-template-rows: 1fr 1fr; */
     grid-template-areas:
-      'basics skills'
-      'profiles works'
-      'educations works';
+      'basics basics'
+      'info works';
+    grid-auto-flow: column;
   }
+  /* Debug grid outline */
   .Basics {
+    background-color:hsla(0, 70%, 37%, 0.311);
     grid-area: basics;
   }
   .Profiles {
+    background-color:hsla(215, 44%, 11%, 0.311);
     grid-area: profiles;
   }
   .Skills {
+    background-color:hsla(215, 44%, 51%, 0.311);
     grid-area: skills;
   }
-  .Works {
-    grid-area: works;
-  }
   .Educations {
+    background-color:hsla(115, 44%, 21%, 0.311);
     grid-area: educations;
   }
-  .Profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .Profile img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-right: 8px;
+  .Works {
+    background-color:hsla(45, 44%, 51%, 0.311);
+    grid-area: works;
   }
 
 </style>
