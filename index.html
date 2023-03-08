@@ -15,16 +15,21 @@
     const resume = await fetch('resume.json').then(res => res.json())
     const html = htm.bind(h)
 
+    const Basics = ({basics}) => {
+      return html`
+        <section>
+          <h1>${basics.name}</h1>
+          <h2>${basics.label}</h2>
+          <p>${basics.email}</p>
+          <p>${basics.phone}</p>
+          <p>${basics.website}</p>
+        </section>
+      `
+    }
     const App = (props) => {
       return html`
           <article>
-            <Basics>
-              <h1>${resume.basics.name}</h1>
-              <h2>${resume.basics.label}</h2>
-              <p>${resume.basics.email}</p>
-              <p>${resume.basics.phone}</p>
-              <p>${resume.basics.website}</p>
-            </Basics>
+            <${Basics} basics=${resume.basics} />
             <Profiles>
               <h3>Profiles</h3>
               <ul>
