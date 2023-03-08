@@ -15,7 +15,26 @@
       const html = htm.bind(h)
 
       const App = (props) => {
-        return html`<h1> ${props.name}!</h1>`
+        return html`
+          <article>
+            <basics>
+              <h1>${resume.basics.name}</h1>
+              <h2>${resume.basics.label}</h2>
+              <p>${resume.basics.email}</p>
+              <p>${resume.basics.phone}</p>
+              <p>${resume.basics.website}</p>
+            </basics>
+            <profiles>
+              <h3>Profiles</h3>
+              <ul>
+                ${resume.basics.profiles.map(profile => html`
+                  <li>
+                    <a href=${profile.url}>${profile.network}</a>
+                  </li>
+                `)}
+              </ul>
+          </article>
+          `
       }
 
       render(html`<${App} name="World" />`, document.body)
