@@ -157,6 +157,15 @@
     }
 
     const Communications = ({ profiles, Identity }) => {
+      const emailCommunication = {
+        network: 'envelope',
+        url: `mailto:${Identity.email}`,
+        display: Identity.email
+      };
+      const phoneCommunication = {
+        network: 'phone',
+        url: Identity.phone
+      };
       return html`
         <section class="Communications">
           <h3>Communications</h3>
@@ -167,15 +176,11 @@
               </li>
             `)}
             <li>
-                <div class="Communication">
-                  <i class="fa-solid fa-envelope"></i>${Identity.email}
-                  </div>
-              </li>
-              <li>
-                <div class="Communication">
-                  <i class="fa-solid fa-phone"></i>${Identity.phone}
-                  </div>
-              </li>
+              <${Communication} profile=${emailCommunication} />
+            </li>
+            <li>
+              <${Communication} profile=${phoneCommunication} />
+            </li>
           </ul>
         </section>
       `
@@ -183,11 +188,12 @@
 
     const Communication = ({ profile }) => {
       const url = profile.url || ''
+      const display = profile.display || url.replace("https://", "")
       return html`
         <div class="Communication">
           <i class="fa-solid fa-brands fa-${profile.network}"></i>
           <a href="${profile.url}">
-            ${profile.url.replace("https://", "")}
+            ${display}
           </a>
         </div>
       `
