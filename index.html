@@ -51,6 +51,11 @@
         font-style: normal;
         font-weight: 300;
     }
+    small {
+      font-size: 0.8em;
+      font-weight: 200;
+
+    }
 /* component styles */
   .Resume {
       --emphasis-color:rgb(250, 198, 112);
@@ -93,6 +98,11 @@
 
     .Works {
       grid-area: works;
+    }
+    .Work > header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   </style>
   <script type="module">
@@ -176,10 +186,12 @@
     const Work = ({ work }) => {
       return html`
       <div class="Work">
-          <h4>${work.company}</h4>
+          <header>
+            <h4>${work.company}</h4>
+            <small class="WorkDate">${work.startDate} to ${work.endDate}</small>
+          </header>
           <em>${work.position}</em>
           <p>${work.website}</p>
-          <p>${work.startDate} - ${work.endDate}</p>
           <p>${work.summary}</p>
           <p>${work.highlights}</p>
         </div>
@@ -207,7 +219,7 @@
           <h4>${education.institution}</h4>
           <p>${education.area}</p>
           <p>${education.studyType}</p>
-          <p>${education.startDate} - ${education.endDate}</p>
+          <p>${education.startDate} to ${education.endDate}</p>
           <p>${education.gpa}</p>
           <p>${education.courses}</p>
         </div>
