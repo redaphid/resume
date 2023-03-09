@@ -4,7 +4,7 @@
     "label": "A full-stack, team-building software developer with an interest in software architecture, research and development, and coding philosophy. ",
     "picture": "",
     "email": "iam@aaronherres.com",
-    "phone": "602-420-3865",
+    "phone": "+1 602-420-3865",
     "website": "",
     "summary": "A software developer with over 20 years experience. A generalist, Aaron has worked in a variety of work environments ranging from startups to large corporations. Aaron's passion for generalism and minimalist design has allowed him to work on projects ranging from microcontrollers to the development of on-premise large cloud computing clusters. Aaron also loves leading teams, as it gives him a captive audience to discuss software development philosophy and exercise his strategies for delivering low-defect software quickly.",
     "location": {
@@ -15,12 +15,12 @@
       {
         "network": "github",
         "username": "redaphid",
-        "url": "https://github.com/redaphid"
+        "url": "github.com/redaphid"
       },
       {
         "network": "twitter",
         "username": "redaphid",
-        "url": "https://twitter.com/redaphid"
+        "url": "twitter.com/redaphid"
       }
     ]
   },

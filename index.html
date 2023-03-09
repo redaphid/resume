@@ -47,7 +47,7 @@
     }
 
     i {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin-right: 0.5em;
       color: var(--emphasis-extra);
     }
@@ -114,21 +114,21 @@
 
     const Communications = ({ profiles, basics }) => {
       return html`
-        <section class="Profiles">
+        <section class="Communications">
           <h3>Communications</h3>
           <ul>
             ${profiles.map(profile => html`
               <li>
-                <${Profile} profile=${profile} />
+                <${Communication} profile=${profile} />
               </li>
             `)}
             <li>
-                <div class="Profile">
+                <div class="Communication">
                   <i class="fa-solid fa-envelope"></i>${basics.email}
                   </div>
               </li>
               <li>
-                <div class="Profile">
+                <div class="Communication">
                   <i class="fa-solid fa-phone"></i>${basics.phone}
                   </div>
               </li>
@@ -137,9 +137,9 @@
       `
     }
 
-    const Profile = ({ profile }) => {
+    const Communication = ({ profile }) => {
       return html`
-        <div class="Profile">
+        <div class="Communication">
           <i class="fa-solid fa-brands fa-${profile.network}"></i>${profile.url}
         </div>
       `
