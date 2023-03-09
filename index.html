@@ -49,20 +49,26 @@
 
     .Basics h1 {
       font-weight: 800;
+      font-size: 3em;
+      margin: 0;
+      width:fit-content;
+      border-bottom: 0.05em solid var(--emphasis-foreground);
     }
 
-    .Basics hr {
-      border: 1px solid var(--emphasis-foreground);
-    }
     .Info {
       grid-area: info;
+      background-color:rgb(245, 225, 190)
     }
 
     .Works {
-      background-color: #e9e8e4;
       grid-area: works;
     }
-
+    h3 {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin: 0;
+      width:fit-content;
+    }
   </style>
   <script type="module">
     import { h, render } from 'https://esm.sh/preact'
@@ -87,7 +93,6 @@
         <section class="Basics">
           <h1>
             ${basics.name}
-            <hr/>
           </h1>
           <h5>${basics.label}</h>
           <p>${basics.email}</p>
@@ -123,7 +128,7 @@
     const Works = ({ works }) => {
       return html`
         <section class="Works">
-          <h3>Work</h3>
+          <h3>Experience</h3>
           <ul>
             ${works.map(work => html`
               <li>
@@ -178,7 +183,7 @@
     const Skills = ({ skills }) => {
       return html`
         <section class="Skills">
-          <h3>Skills</h3>
+          <h3>Abilities</h3>
           <ul>
             ${skills.map(skill => html`
               <li>
