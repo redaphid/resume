@@ -234,12 +234,20 @@
       `
     }
 
+    const TimeRange = ({ start, end }) => {
+      return html`
+        <time>
+          ${start} to ${end ?? 'present'}
+        </time>
+      `
+    }
+
     const Work = ({ work }) => {
       return html`
       <div class="Work">
           <header>
             <h4>${work.company}</h4>
-            <time>${work.startDate} to ${work.endDate}</time>
+            <${TimeRange} start=${work.startDate} end=${work.endDate} />
           </header>
           <em>${work.position}</em>
           <p class="Summary">${work.summary}</p>
@@ -269,7 +277,7 @@
           <h4>${education.institution}</h4>
           <p>${education.area} </p>
           <p>${education.studyType}</p>
-          <time>${education.startDate} to ${education.endDate}</time>
+          <${TimeRange} start=${education.startDate} end=${education.endDate} />
         </div>
       `
     }
