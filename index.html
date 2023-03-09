@@ -3,13 +3,17 @@
 <header>
   <link href="font-awesome/css/all.min.css" rel="stylesheet">
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap');
-  /* Generic styles */
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap');
+    /* Generic styles */
 
     body {
+      --emphasis-color: rgb(250, 198, 112);
+      --emphasis-extra: rgb(243, 121, 37);
+      --emphasis-foreground: black;
       font-family: sans-serif;
       font-size: 16px;
     }
+
     section {
       padding: 1em;
     }
@@ -18,7 +22,7 @@
       font-weight: 600;
       font-size: 1.5em;
       margin: 0;
-      width:fit-content;
+      width: fit-content;
       border-bottom: 0.05em solid var(--emphasis-foreground);
     }
 
@@ -26,14 +30,14 @@
       font-weight: 600;
       font-size: 1.2em;
       margin: 0;
-      width:fit-content;
+      width: fit-content;
     }
 
     h5 {
       font-weight: 400;
       font-size: 1em;
       margin: 0;
-      width:fit-content;
+      width: fit-content;
     }
 
     ul {
@@ -46,21 +50,29 @@
       margin-right: 0.5em;
       color: var(--emphasis-extra);
     }
+
     /* this will be used for the titles I had at each job */
     em {
-        font-style: normal;
-        font-weight: 300;
+      font-style: normal;
+      font-weight: 300;
     }
+
     small {
       font-size: 0.8em;
       font-weight: 200;
 
     }
-/* component styles */
-  .Resume {
-      --emphasis-color:rgb(250, 198, 112);
-      --emphasis-extra:rgb(243, 121, 37);;
-      --emphasis-foreground: black;
+    a {
+      color: var(--emphasis-foreground);
+    }
+
+    .Summary {
+      font-weight: 300;
+      font-size: 0.9em;
+    }
+
+    /* component styles */
+    .Resume {
       font-family: 'Work Sans', serif;
 
       display: grid;
@@ -70,13 +82,13 @@
       column-gap: 0.1em;
       row-gap: 0.1em;
     }
+
     /* flex the contents inside info */
     .Info {
       grid-area: info;
       height: 100%;
     }
 
-    /* Debug grid outline */
     .Identity {
       background-color: var(--emphasis-color);
       color: var(--emphasis-foreground);
@@ -88,22 +100,28 @@
       font-weight: 800;
       font-size: 3em;
       margin: 0;
-      width:fit-content;
+      width: fit-content;
     }
 
     .Info {
       grid-area: info;
-      background-color:rgb(245, 225, 190)
+      background-color: rgb(245, 225, 190)
     }
 
     .Works {
       grid-area: works;
     }
+
     .Work > header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
     }
+
+    .Skill {
+      padding: 0.1em;
+    }
+
   </style>
   <script type="module">
     import { h, render } from 'https://esm.sh/preact'
@@ -163,7 +181,10 @@
     const Communication = ({ profile }) => {
       return html`
         <div class="Communication">
-          <i class="fa-solid fa-brands fa-${profile.network}"></i>${profile.url}
+          <i class="fa-solid fa-brands fa-${profile.network}"></i>
+          <a href="${profile.url}">
+            ${profile.url.replace("https://", "")}
+          </a>
         </div>
       `
     }
@@ -191,8 +212,7 @@
             <small class="WorkDate">${work.startDate} to ${work.endDate}</small>
           </header>
           <em>${work.position}</em>
-          <p>${work.website}</p>
-          <p>${work.summary}</p>
+          <p class="Summary">${work.summary}</p>
           <p>${work.highlights}</p>
         </div>
       `
@@ -244,8 +264,6 @@
       return html`
         <div class="Skill">
           ${skill.name}
-          <p>${skill.level}</p>
-          <p>${skill.keywords}</p>
         </div>
       `
     }
