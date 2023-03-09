@@ -134,7 +134,7 @@
       return html`
           <div class="Resume">
             <${Identity} Identity=${resume.basics} />
-            <${Communications} profiles=${resume.basics.profiles} Identity=${resume.basics} />
+            <${Communications} profiles=${resume.basics.profiles} identity=${resume.basics} />
             <div class="Info">
               <${Skills} skills=${resume.skills}/>
               <${Educations} education=${resume.education} />
@@ -156,19 +156,27 @@
       `
     }
 
-    const Communications = ({ profiles, Identity }) => {
-      const emailCommunication = {
+    const Communications = ({ profiles, identity }) => {
+      const email = {
         network: 'envelope',
-        url: `mailto:${Identity.email}`,
-        display: Identity.email,
+        url: `mailto:${identity.email}`,
+        display: identity.email,
         isBrand: false,
       };
-      const phoneCommunication = {
+      const phone = {
         network: 'phone',
-        url: `tel:${Identity.phone}`,
-        display: Identity.phone,
+        url: `tel:${identity.phone}`,
+        display: identity.phone,
         isBrand: false,
       };
+      const location = {
+        network: 'map-marker-alt',
+        url: `https://www.google.com/maps/place/${identity.location.address}`,
+        display: `${identity.location.city}, ${identity.location.region}`,
+        isBrand: false,
+      };
+      // merge profiles with contact info
+      profiles = [...profiles, email, phone, location];
       return html`
         <section class="Communications">
           <h3>Communications</h3>
@@ -178,12 +186,6 @@
                 <${Communication} profile=${profile} />
               </li>
             `)}
-            <li>
-              <${Communication} profile=${emailCommunication} />
-            </li>
-            <li>
-              <${Communication} profile=${phoneCommunication} />
-            </li>
           </ul>
         </section>
       `
