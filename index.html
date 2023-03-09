@@ -160,11 +160,12 @@
       const emailCommunication = {
         network: 'envelope',
         url: `mailto:${Identity.email}`,
-        display: Identity.email
+        display: Identity.email,
       };
       const phoneCommunication = {
         network: 'phone',
-        url: Identity.phone
+        url: `tel:${Identity.phone}`,
+        display: Identity.phone,
       };
       return html`
         <section class="Communications">
