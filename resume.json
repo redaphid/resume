@@ -111,34 +111,6 @@
       "website": "www.linkedin.com/company/omedix"
     },
     {
-      "company": "University of Hawaii Manoa",
-      "name": "Coherence-Based Modeling of Cultural Change and Political Violence (CCPV) project",
-      "endDate": "2010-08-31",
-      "skills": [
-        "Java",
-        "HTML",
-        "Python"
-      ],
-      "position": "Software Developer",
-      "startDate": "2009-01-31",
-      "summary": "Designed and developed an intelligent, plugin-based web crawler that used existing algorithms from social sciences to extract semantic meaning from natural language conversations on the web. \n\nInformally described as \"finding terrorists on the internet\", the system would trace the origin and spread of extremist ideas. Funded by the Air Force Office of Scientific Research.",
-      "website": "en.wikipedia.org/wiki/Laboratory_for_Interactive_Learning_Technologies"
-    },
-    {
-      "company": "Laboratory for Interactive Learning Technologies",
-      "name": "Laboratory for Interactive Learning Technologies",
-      "endDate": "2009-01-31",
-      "skills": [
-        "C++",
-        "Android",
-        "Java"
-      ],
-      "position": "Research Assistant",
-      "startDate": "2008-08-31",
-      "summary": "Performed research and development on augmented reality for mobile platforms. Designed an application to recognize nametags of users and augmented nametags with information of the wearer of the nametag.",
-      "website": "en.wikipedia.org/wiki/Laboratory_for_Interactive_Learning_Technologies"
-    },
-    {
       "company": "Avanade",
       "name": "Avanade",
       "endDate": "2008-08-01",
@@ -151,20 +123,6 @@
       "startDate": "2007-08-01",
       "summary": "Contract developer for Microsoft, working on disaster recovery and EULA-generation projects in C# and ASP.NET",
       "website": "www.avanade.com"
-    },
-    {
-      "company": "University of Puget Sound",
-      "name": "University of Puget Sound",
-      "endDate": "2007-05-31",
-      "skills": [
-        "C++",
-        "Ruby",
-        "Python"
-      ],
-      "position": "Software Developer",
-      "startDate": "2003-08-31",
-      "summary": "Developed a system responsible for managing internet connections for thousands of students. The system automatically scans each connected computer for vulnerabilities, moving vulnerable devices to a network that limited access to only security updating sites until the device is no longer vulnerable.\n\nInterfaced with smart routers through SNMP.",
-      "website": "www.pugetsound.edu"
     },
     {
       "company": "Software Development Alternatives",
