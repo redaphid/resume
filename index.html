@@ -71,6 +71,20 @@
       font-size: 0.9em;
     }
 
+    .Education p {
+      font-weight: 400;
+      font-size: 0.9em;
+      margin: 0;
+    }
+
+    .Educations > ul > li {
+      margin-bottom: 1em;
+    }
+    .Education time {
+      font-weight: 300;
+      font-size: 0.90em;
+    }
+
     /* component styles */
     .Resume {
       font-family: 'Work Sans', serif;
@@ -253,11 +267,9 @@
       return html`
         <div class="Education">
           <h4>${education.institution}</h4>
-          <p>${education.area}</p>
+          <p>${education.area} </p>
           <p>${education.studyType}</p>
-          <p>${education.startDate} to ${education.endDate}</p>
-          <p>${education.gpa}</p>
-          <p>${education.courses}</p>
+          <time>${education.startDate} to ${education.endDate}</time>
         </div>
       `
     }
@@ -287,6 +299,7 @@
     const html = htm.bind(h)
     const res = await fetch('resume.json').then(res => res.json())
     render(html`<${Resume} resume=${res}/>`, document.body)
+
     // helper functions
     const getUniqueAbilities = (resume) => {
     const abilities = resume.work.reduce((acc, work) => {
