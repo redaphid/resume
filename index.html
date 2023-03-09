@@ -287,6 +287,20 @@
     const html = htm.bind(h)
     const res = await fetch('resume.json').then(res => res.json())
     render(html`<${Resume} resume=${res}/>`, document.body)
+    // helper functions
+    const getUniqueAbilities = (resume) => {
+    const abilities = resume.work.reduce((acc, work) => {
+        const skills = work.skills.map(skill => {return {name:skill}})
+        return [...acc, ...skills]
+      }, [])
+
+      const uniqueAbilities = [...new Set(abilities.map(item => item.name))].map(name => {
+        return abilities.find(item => item.name === name)
+      }).sort((a, b) => a.name.localeCompare(b.name))
+      return uniqueAbilities
+    }
+
+    window.getUniqueAbilities = ()=>getUniqueAbilities(res)
   </script>
 
 </header>
