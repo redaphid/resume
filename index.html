@@ -118,8 +118,11 @@
       align-items: baseline;
     }
 
-    .Skill {
+    .Skill, Communication {
       padding: 0.1em;
+    }
+    .Communication{
+      margin-bottom: 0.25em;
     }
 
   </style>
@@ -179,6 +182,7 @@
     }
 
     const Communication = ({ profile }) => {
+      const url = profile.url || ''
       return html`
         <div class="Communication">
           <i class="fa-solid fa-brands fa-${profile.network}"></i>
