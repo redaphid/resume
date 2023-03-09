@@ -176,7 +176,7 @@
         isBrand: false,
       };
       // merge profiles with contact info
-      profiles = [...profiles, email, phone, location];
+      profiles = [email, phone, ...profiles, location, ];
       return html`
         <section class="Communications">
           <h3>Communications</h3>
