@@ -16,9 +16,11 @@
     The basics section includes a profile image
   */
     .Resume {
-      --emphasize-color: #c6d3c9;
-      --emphasis-foreground: #6c5662;
-      font-family: 'Proxima Nova', sans-serif;
+      --emphasize-color: rgb(250, 198, 112);
+      --emphasis-foreground: black;
+
+      @import url(//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl);
+      font-family: 'Suisseintl', sans-serif;
 
       display: grid;
       grid-template-areas:
@@ -41,35 +43,22 @@
 
     /* Debug grid outline */
     .Basics {
-      background-image: url("blue-schematic-paper.png");
+      font-size:large;
+      background-color: var(--emphasize-color);
       color: var(--emphasis-foreground);
       padding: 1em;
       grid-area: basics;
     }
 
     .Basics hr {
-      border: 1px solid #fff;
+      border: 1px solid var(--emphasis-foreground);
     }
-
-    .Basics h1 {
-      width: fit-content;
-      margin: 0;
-    }
-
-    .Profiles {
-      background-color: hsla(215, 44%, 11%, 0.311);
-    }
-
-    .Skills {
-      background-color: hsla(215, 44%, 51%, 0.311);
-    }
-
-    .Educations {
-      background-color: hsla(115, 44%, 21%, 0.311);
+    .Info {
+      grid-area: info;
     }
 
     .Works {
-      background-color: hsla(45, 44%, 51%, 0.311);
+      background-color: #e9e8e4;
       grid-area: works;
     }
 
