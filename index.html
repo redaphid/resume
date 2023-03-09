@@ -15,6 +15,21 @@
     On the right side, we have works
     The basics section includes a profile image
   */
+  section {
+      padding: 1em;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin: 0;
+      width:fit-content;
+      border-bottom: 0.05em solid var(--emphasis-foreground);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
     .Resume {
       --emphasize-color:rgb(250, 198, 112);
       --emphasis-foreground: black;
@@ -33,10 +48,6 @@
     .Info {
       grid-area: info;
       height: 100%;
-    }
-
-    .Info>* {
-      padding: 1em;
     }
 
     /* Debug grid outline */
@@ -63,12 +74,6 @@
     .Works {
       grid-area: works;
     }
-    h3 {
-      font-weight: 600;
-      font-size: 1.5em;
-      margin: 0;
-      width:fit-content;
-    }
   </style>
   <script type="module">
     import { h, render } from 'https://esm.sh/preact'
@@ -78,8 +83,8 @@
       return html`
           <div class="Resume">
             <${Basics} basics=${resume.basics} />
+            <${Communications} profiles=${resume.basics.profiles} basics=${resume.basics} />
             <div class="Info">
-              <${Profiles} profiles=${resume.basics.profiles} />
               <${Skills} skills=${resume.skills}/>
               <${Educations} education=${resume.education} />
             </div>
@@ -95,23 +100,23 @@
             ${basics.name}
           </h1>
           <h5>${basics.label}</h>
-          <p>${basics.email}</p>
-          <p>${basics.phone}</p>
-          <p>${basics.website}</p>
         </section>
       `
     }
 
-    const Profiles = ({ profiles }) => {
+    const Communications = ({ profiles, basics }) => {
       return html`
         <section class="Profiles">
-          <h3>Profiles</h3>
+          <h3>Comms</h3>
           <ul>
             ${profiles.map(profile => html`
               <li>
                 <${Profile} profile=${profile} />
               </li>
             `)}
+            <li>
+              <a href=${basics.email}>${basics.email}</a>
+              </li>
           </ul>
         </section>
       `
@@ -198,7 +203,7 @@
     const Skill = ({ skill }) => {
       return html`
         <div class="Skill">
-          <h4>${skill.name}</h4>
+          ${skill.name}
           <p>${skill.level}</p>
           <p>${skill.keywords}</p>
         </div>
