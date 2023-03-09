@@ -66,6 +66,11 @@
       color: var(--emphasis-foreground);
     }
 
+    time {
+      font-weight: 300;
+      font-size: 0.90em;
+    }
+
     .Summary {
       font-weight: 300;
       font-size: 0.9em;
@@ -79,10 +84,6 @@
 
     .Educations > ul > li {
       margin-bottom: 1em;
-    }
-    time {
-      font-weight: 300;
-      font-size: 0.90em;
     }
 
     /* component styles */
@@ -152,6 +153,7 @@
             <div class="Info">
               <${Skills} skills=${resume.skills}/>
               <${Educations} education=${resume.education} />
+              <${Admirers} admirers=${resume.references} />
             </div>
             <${Works} works=${resume.work} />
           </div>
@@ -281,6 +283,31 @@
         </div>
       `
     }
+
+    const Admirers = ({ admirers }) => {
+      return html`
+        <section class="Educations">
+          <h3>Admirers</h3>
+          <ul>
+            ${admirers.map(admirer => html`
+              <li>
+                <${Admirer} admirer=${admirer} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Admirer = ({ admirer }) => {
+      return html`
+        <div class="Admirer">
+          <h4>${admirer.name}</h4>
+          <a href="mailto:${admirer.email}?subject=What do you admire most about Aaron Herres?">${admirer.email}</a>
+        </div>
+      `
+    }
+
     const Skills = ({ skills }) => {
       return html`
         <section class="Skills">

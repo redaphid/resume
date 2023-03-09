@@ -197,16 +197,16 @@
   ],
   "references":[
     {
+      "name": "Roy van de Water",
+      "email": "roy.vwater@gmail.com"
+    },
+    {
       "name": "Andrew Steinheiser",
       "email": "me@iamandrew.io"
     },
     {
-      "name": "Gage Irving",
-      "email": "gage.irving@gmail.com"
-    },
-    {
-      "name": "Roy van de Water",
-      "email": "roy.vwater@gmail.com"
+      "name": "Peter DeMartini",
+      "email": "thepeterdemartini@gmail.com"
     }
   ],
   "languages": [
