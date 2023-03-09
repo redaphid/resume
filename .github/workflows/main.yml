@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 jobs:
   generate_pdf:
-    name: Upload resume pdf
+    name: Generate Resume PDF
     runs-on: ubuntu-22.04
     steps:
     - name: Checkout
@@ -15,9 +15,10 @@ jobs:
         htmlFile: ./index.html
         outputFile: ./resume.pdf
         pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
-    #   uses: actions/upload-artifact@v3.1.2
-    # # with:
-    # #   # Artifact name
-    # #   name: resume.pdf # optional, default is artifact
-    # #   # A file, directory or wildcard pattern that describes what to upload
-    # #   path: ./index.html
+    - name: Upload resume pdf
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        # Artifact name
+        name: resume.pdf # optional, default is artifact
+        # A file, directory or wildcard pattern that describes what to upload
+        path: ./resume.pdf
