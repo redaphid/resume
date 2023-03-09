@@ -11,9 +11,9 @@
 
     /*
     Resume is a grid the size of a US letter page .
-    On the left side, we have the basics, skills, and educations.
+    On the left side, we have the Identity, skills, and educations.
     On the right side, we have works
-    The basics section includes a profile image
+    The Identity section includes a profile image
   */
   .Resume {
       --emphasis-color:rgb(250, 198, 112);
@@ -23,7 +23,7 @@
 
       display: grid;
       grid-template-areas:
-        'logo basics'
+        'logo Identity'
         'info works';
       column-gap: 0.1em;
       row-gap: 0.1em;
@@ -73,14 +73,14 @@
     }
 
     /* Debug grid outline */
-    .Basics {
+    .Identity {
       background-color: var(--emphasis-color);
       color: var(--emphasis-foreground);
       padding: 1em;
-      grid-area: basics;
+      grid-area: Identity;
     }
 
-    .Basics h1 {
+    .Identity h1 {
       font-weight: 800;
       font-size: 3em;
       margin: 0;
@@ -89,9 +89,6 @@
 
     .Info {
       grid-area: info;
-    }
-
-    .Info > section {
       background-color:rgb(245, 225, 190)
     }
 
@@ -106,8 +103,8 @@
     const Resume = ({ resume }) => {
       return html`
           <div class="Resume">
-            <${Basics} basics=${resume.basics} />
-            <${Communications} profiles=${resume.basics.profiles} basics=${resume.basics} />
+            <${Identity} Identity=${resume.basics} />
+            <${Communications} profiles=${resume.basics.profiles} Identity=${resume.basics} />
             <div class="Info">
               <${Skills} skills=${resume.skills}/>
               <${Educations} education=${resume.education} />
@@ -117,19 +114,19 @@
           `
     }
 
-    const Basics = ({ basics }) => {
+    const Identity = ({ Identity }) => {
       return html`
-        <section class="Basics">
+        <section class="Identity">
           <h3>Identity</h3>
           <h1>
-            ${basics.name}.
+            ${Identity.name}.
           </h1>
-          <h5>${basics.label}</h>
+          <h5>${Identity.label}</h>
         </section>
       `
     }
 
-    const Communications = ({ profiles, basics }) => {
+    const Communications = ({ profiles, Identity }) => {
       return html`
         <section class="Communications">
           <h3>Communications</h3>
@@ -141,12 +138,12 @@
             `)}
             <li>
                 <div class="Communication">
-                  <i class="fa-solid fa-envelope"></i>${basics.email}
+                  <i class="fa-solid fa-envelope"></i>${Identity.email}
                   </div>
               </li>
               <li>
                 <div class="Communication">
-                  <i class="fa-solid fa-phone"></i>${basics.phone}
+                  <i class="fa-solid fa-phone"></i>${Identity.phone}
                   </div>
               </li>
           </ul>
