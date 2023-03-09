@@ -14,7 +14,7 @@ jobs:
       with:
         htmlFile: ./index.html
         outputFile: ./resume.pdf
-        pdfOptions: '{"format": "Letter"}'
+        pdfOptions: '{"format": "Letter", "scale": 0.75}'
     - name: Get Current Date
       id: date
       run: echo "::set-output name=date::$(date -u +'%Y-%m-%d_%H-%M-%S')"
