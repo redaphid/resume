@@ -176,12 +176,12 @@
         isBrand: false,
       };
       // merge profiles with contact info
-      profiles = [email, phone, ...profiles, location, ];
+      const comms = [email, phone, ...profiles, location, ];
       return html`
         <section class="Communications">
           <h3>Communications</h3>
           <ul>
-            ${profiles.map(profile => html`
+            ${comms.map(profile => html`
               <li>
                 <${Communication} profile=${profile} />
               </li>
