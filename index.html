@@ -2,7 +2,7 @@
 <html>
 <header>
   <link href="font-awesome/css/all.min.css" rel="stylesheet">
-  <style>
+  <style id="styles-general">
     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;800&display=swap');
     /* Generic styles */
 
@@ -62,6 +62,7 @@
       font-weight: 200;
 
     }
+
     a {
       color: var(--emphasis-foreground);
     }
@@ -71,6 +72,8 @@
       font-size: 0.90em;
     }
 
+  </style>
+  <style id="styles-components">
     .Summary {
       font-weight: 300;
       font-size: 0.9em;
@@ -82,7 +85,7 @@
       margin: 0;
     }
 
-    .Educations > ul > li {
+    .Educations>ul>li {
       margin-bottom: 1em;
     }
 
@@ -127,16 +130,18 @@
       grid-area: works;
     }
 
-    .Work > header {
+    .Work>header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
     }
 
-    .Skill, Communication {
+    .Skill,
+    Communication {
       padding: 0.1em;
     }
-    .Communication{
+
+    .Communication {
       margin-bottom: 0.25em;
     }
 
@@ -192,7 +197,7 @@
         isBrand: false,
       };
       // merge profiles with contact info
-      const comms = [email, phone, ...profiles, location, ];
+      const comms = [email, phone, ...profiles, location,];
       return html`
         <section class="Communications">
           <h3>Communications</h3>
@@ -213,7 +218,7 @@
       const display = profile.display || url.replace("https://", "")
       return html`
         <div class="Communication">
-          <i class="fa-solid ${isBrand === true ? "fa-brands": ""} fa-${profile.network}"></i>
+          <i class="fa-solid ${isBrand === true ? "fa-brands" : ""} fa-${profile.network}"></i>
           <a href="${profile.url}" target="_blank">
             ${display}
           </a>
@@ -337,8 +342,8 @@
 
     // helper functions
     const getUniqueAbilities = (resume) => {
-    const abilities = resume.work.reduce((acc, work) => {
-        const skills = work.skills.map(skill => {return {name:skill}})
+      const abilities = resume.work.reduce((acc, work) => {
+        const skills = work.skills.map(skill => { return { name: skill } })
         return [...acc, ...skills]
       }, [])
 
@@ -348,7 +353,7 @@
       return uniqueAbilities
     }
 
-    window.getUniqueAbilities = ()=>getUniqueAbilities(res)
+    window.getUniqueAbilities = () => getUniqueAbilities(res)
   </script>
 
 </header>
