@@ -136,7 +136,7 @@
       align-items: baseline;
     }
 
-    .Skill,
+    .Ability,
     Communication {
       padding: 0.1em;
     }
@@ -156,7 +156,7 @@
             <${Identity} Identity=${resume.basics} />
             <${Communications} profiles=${resume.basics.profiles} identity=${resume.basics} />
             <div class="Info">
-              <${Skills} skills=${resume.skills}/>
+              <${Abilities} skills=${resume.skills}/>
               <${Educations} education=${resume.education} />
               <${Admirers} admirers=${resume.references} />
             </div>
@@ -313,14 +313,14 @@
       `
     }
 
-    const Skills = ({ skills }) => {
+    const Abilities = ({ skills }) => {
       return html`
-        <section class="Skills">
+        <section class="Abilities">
           <h3>Abilities</h3>
           <ul>
             ${skills.map(skill => html`
               <li>
-                <${Skill} skill=${skill} />
+                <${Ability} skill=${skill} />
               </li>
             `)}
           </ul>
@@ -328,9 +328,9 @@
       `
     }
 
-    const Skill = ({ skill }) => {
+    const Ability = ({ skill }) => {
       return html`
-        <div class="Skill">
+        <div class="Ability">
           ${skill.name}
         </div>
       `
