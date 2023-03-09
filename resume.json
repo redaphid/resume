@@ -13,11 +13,6 @@
     },
     "profiles": [
       {
-        "network": "linkedin",
-        "username": "Aaron Herres",
-        "url": "https://linkedin.com/in/aaron-herres-0a28bb5/"
-      },
-      {
         "network": "github",
         "username": "redaphid",
         "url": "https://github.com/redaphid"

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <header>
-
+  <link href="font-awesome/css/all.min.css" rel="stylesheet">
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
     body {
@@ -15,23 +15,9 @@
     On the right side, we have works
     The basics section includes a profile image
   */
-  section {
-      padding: 1em;
-    }
-
-    h3 {
-      font-weight: 600;
-      font-size: 1.5em;
-      margin: 0;
-      width:fit-content;
-      border-bottom: 0.05em solid var(--emphasis-foreground);
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    .Resume {
-      --emphasize-color:rgb(250, 198, 112);
+  .Resume {
+      --emphasis-color:rgb(250, 198, 112);
+      --emphasis-extra:rgb(243, 121, 37);;
       --emphasis-foreground: black;
       font-family: 'Work Sans', serif;
 
@@ -43,6 +29,28 @@
       row-gap: 0.1em;
 
     }
+  section {
+      padding: 1em;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin: 0;
+      width:fit-content;
+      border-bottom: 0.05em solid var(--emphasis-foreground);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    i {
+      font-size: 1.5em;
+      margin-right: 0.5em;
+      color: var(--emphasis-extra);
+    }
 
     /* flex the contents inside info */
     .Info {
@@ -52,7 +60,7 @@
 
     /* Debug grid outline */
     .Basics {
-      background-color: var(--emphasize-color);
+      background-color: var(--emphasis-color);
       color: var(--emphasis-foreground);
       padding: 1em;
       grid-area: basics;
@@ -107,7 +115,7 @@
     const Communications = ({ profiles, basics }) => {
       return html`
         <section class="Profiles">
-          <h3>Comms</h3>
+          <h3>Communications</h3>
           <ul>
             ${profiles.map(profile => html`
               <li>
@@ -115,7 +123,14 @@
               </li>
             `)}
             <li>
-              <a href=${basics.email}>${basics.email}</a>
+                <div class="Profile">
+                  <i class="fa-solid fa-envelope"></i>${basics.email}
+                  </div>
+              </li>
+              <li>
+                <div class="Profile">
+                  <i class="fa-solid fa-phone"></i>${basics.phone}
+                  </div>
               </li>
           </ul>
         </section>
@@ -125,7 +140,7 @@
     const Profile = ({ profile }) => {
       return html`
         <div class="Profile">
-          <a href=${profile.url}>${profile.network}</a>
+          <i class="fa-solid fa-brands fa-${profile.network}"></i>${profile.url}
         </div>
       `
     }
