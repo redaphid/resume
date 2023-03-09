@@ -161,11 +161,13 @@
         network: 'envelope',
         url: `mailto:${Identity.email}`,
         display: Identity.email,
+        isBrand: false,
       };
       const phoneCommunication = {
         network: 'phone',
         url: `tel:${Identity.phone}`,
         display: Identity.phone,
+        isBrand: false,
       };
       return html`
         <section class="Communications">
@@ -189,10 +191,11 @@
 
     const Communication = ({ profile }) => {
       const url = profile.url || ''
+      const isBrand = profile.isBrand ?? true;
       const display = profile.display || url.replace("https://", "")
       return html`
         <div class="Communication">
-          <i class="fa-solid fa-brands fa-${profile.network}"></i>
+          <i class="fa-solid ${isBrand === true ? "fa-brands": "blahblah"} fa-${profile.network}"></i>
           <a href="${profile.url}">
             ${display}
           </a>
