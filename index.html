@@ -41,6 +41,20 @@
       border-bottom: 0.05em solid var(--emphasis-foreground);
     }
 
+    h4 {
+      font-weight: 600;
+      font-size: 1.2em;
+      margin: 0;
+      width:fit-content;
+    }
+
+    h5 {
+      font-weight: 400;
+      font-size: 1em;
+      margin: 0;
+      width:fit-content;
+    }
+
     ul {
       list-style: none;
       padding: 0;
@@ -75,6 +89,9 @@
 
     .Info {
       grid-area: info;
+    }
+
+    .Info > section {
       background-color:rgb(245, 225, 190)
     }
 
@@ -105,7 +122,7 @@
         <section class="Basics">
           <h3>Identity</h3>
           <h1>
-            ${basics.name}
+            ${basics.name}.
           </h1>
           <h5>${basics.label}</h>
         </section>
