@@ -74,37 +74,19 @@
 
   </style>
   <style id="styles-components">
-    .Summary {
-      font-weight: 300;
-      font-size: 0.9em;
-    }
-
-    .Education p {
-      font-weight: 400;
-      font-size: 0.9em;
-      margin: 0;
-    }
-
-    .Educations>ul>li {
-      margin-bottom: 1em;
-    }
-
-    /* component styles */
     .Resume {
       font-family: 'Work Sans', serif;
 
       display: grid;
       grid-template-areas:
-        'logo Identity'
-        'info works';
+        '_nothing Identity'
+        'Info Works';
       column-gap: 0.1em;
       row-gap: 0.1em;
     }
 
-    /* flex the contents inside info */
-    .Info {
-      grid-area: info;
-      height: 100%;
+    .Communication {
+      margin-bottom: 0.25em;
     }
 
     .Identity {
@@ -121,13 +103,22 @@
       width: fit-content;
     }
 
+    .Education p {
+      font-weight: 400;
+      font-size: 0.9em;
+      margin: 0;
+    }
+
+    .Educations>ul>li {
+      margin-bottom: 1em;
+    }
+
     .Info {
-      grid-area: info;
       background-color: rgb(245, 225, 190)
     }
 
     .Works {
-      grid-area: works;
+      grid-area: Works;
     }
 
     .Work>header {
@@ -137,12 +128,8 @@
     }
 
     .Skill,
-    Communication {
-      padding: 0.1em;
-    }
-
     .Communication {
-      margin-bottom: 0.25em;
+      padding: 0.1em;
     }
 
   </style>
@@ -226,6 +213,55 @@
       `
     }
 
+    const Skills = ({ skills }) => {
+      return html`
+        <section class="Skills">
+          <h3>Abilities</h3>
+          <ul>
+            ${skills.map(skill => html`
+              <li>
+                <${Skill} skill=${skill} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Skill = ({ skill }) => {
+      return html`
+        <div class="Skill">
+          ${skill.name}
+        </div>
+      `
+    }
+
+    const Educations = ({ education }) => {
+      return html`
+        <section class="Educations">
+          <h3>Education</h3>
+          <ul>
+            ${education.map(edu => html`
+              <li>
+                <${Education} education=${edu} />
+              </li>
+            `)}
+          </ul>
+        </section>
+      `
+    }
+
+    const Education = ({ education }) => {
+      return html`
+        <div class="Education">
+          <h4>${education.institution}</h4>
+          <p>${education.area} </p>
+          <p>${education.studyType}</p>
+          <${TimeRange} start=${education.startDate} end=${education.endDate} />
+        </div>
+      `
+    }
+
     const Works = ({ works }) => {
       return html`
         <section class="Works">
@@ -263,32 +299,6 @@
       `
     }
 
-    const Educations = ({ education }) => {
-      return html`
-        <section class="Educations">
-          <h3>Education</h3>
-          <ul>
-            ${education.map(edu => html`
-              <li>
-                <${Education} education=${edu} />
-              </li>
-            `)}
-          </ul>
-        </section>
-      `
-    }
-
-    const Education = ({ education }) => {
-      return html`
-        <div class="Education">
-          <h4>${education.institution}</h4>
-          <p>${education.area} </p>
-          <p>${education.studyType}</p>
-          <${TimeRange} start=${education.startDate} end=${education.endDate} />
-        </div>
-      `
-    }
-
     const Admirers = ({ admirers }) => {
       return html`
         <section class="Educations">
@@ -309,29 +319,6 @@
         <div class="Admirer">
           <h4>${admirer.name}</h4>
           <a href="mailto:${admirer.email}?subject=What do you admire most about Aaron Herres?" target="_blank">${admirer.email}</a>
-        </div>
-      `
-    }
-
-    const Skills = ({ skills }) => {
-      return html`
-        <section class="Skills">
-          <h3>Abilities</h3>
-          <ul>
-            ${skills.map(skill => html`
-              <li>
-                <${Skill} skill=${skill} />
-              </li>
-            `)}
-          </ul>
-        </section>
-      `
-    }
-
-    const Skill = ({ skill }) => {
-      return html`
-        <div class="Skill">
-          ${skill.name}
         </div>
       `
     }
