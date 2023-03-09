@@ -140,7 +140,6 @@
       "website": "www.s-d-a-inc.com"
     }
   ],
-  "volunteer": [],
   "education": [
     {
       "institution": "University of Hawaii Manoa",
@@ -161,8 +160,6 @@
       "courses": []
     }
   ],
-  "awards": [],
-  "publications": [],
   "skills": [
     {
       "name": "Typescript",
@@ -197,6 +194,20 @@
     {
       "name": "And others..."
     }
+  ],
+  "references":[
+    {
+      "name": "Andrew Steinheiser",
+      "email": "me@iamandrew.io"
+    },
+    {
+      "name": "Gage Irving",
+      "email": "gage.irving@gmail.com"
+    },
+    {
+      "name": "Roy van de Water",
+      "email": "roy.vwater@gmail.com"
+    },
   ],
   "languages": [
     {
