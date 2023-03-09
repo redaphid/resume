@@ -213,8 +213,8 @@
       const display = profile.display || url.replace("https://", "")
       return html`
         <div class="Communication">
-          <i class="fa-solid ${isBrand === true ? "fa-brands": "blahblah"} fa-${profile.network}"></i>
-          <a href="${profile.url}">
+          <i class="fa-solid ${isBrand === true ? "fa-brands": ""} fa-${profile.network}"></i>
+          <a href="${profile.url}" target="_blank">
             ${display}
           </a>
         </div>
@@ -303,7 +303,7 @@
       return html`
         <div class="Admirer">
           <h4>${admirer.name}</h4>
-          <a href="mailto:${admirer.email}?subject=What do you admire most about Aaron Herres?">${admirer.email}</a>
+          <a href="mailto:${admirer.email}?subject=What do you admire most about Aaron Herres?" target="_blank">${admirer.email}</a>
         </div>
       `
     }
