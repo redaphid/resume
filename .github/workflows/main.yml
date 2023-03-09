@@ -14,10 +14,13 @@ jobs:
       with:
         htmlFile: ./index.html
         outputFile: ./resume.pdf
-        pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+        pdfOptions: '{"format": "Letter"}'
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date --iso-8601=minutes)"
     - name: GH Release
       uses: softprops/action-gh-release@v0.1.15
       with:
-        tag_name: ${{ github.ref }}
+        tag_name: ${{ steps.date.outputs.date }}
         files: ./resume.pdf
 
