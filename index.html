@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <header>
-  <style>
-    @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
     body {
       font-family: sans-serif;
       font-size: 16px;
@@ -16,11 +16,9 @@
     The basics section includes a profile image
   */
     .Resume {
-      --emphasize-color: rgb(250, 198, 112);
+      --emphasize-color:rgb(250, 198, 112);
       --emphasis-foreground: black;
-
-      @import url(//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl);
-      font-family: 'Suisseintl', sans-serif;
+      font-family: 'Work Sans', serif;
 
       display: grid;
       grid-template-areas:
@@ -43,11 +41,14 @@
 
     /* Debug grid outline */
     .Basics {
-      font-size:large;
       background-color: var(--emphasize-color);
       color: var(--emphasis-foreground);
       padding: 1em;
       grid-area: basics;
+    }
+
+    .Basics h1 {
+      font-weight: 800;
     }
 
     .Basics hr {
@@ -88,7 +89,7 @@
             ${basics.name}
             <hr/>
           </h1>
-          <h3>${basics.label}</h3>
+          <h5>${basics.label}</h>
           <p>${basics.email}</p>
           <p>${basics.phone}</p>
           <p>${basics.website}</p>
