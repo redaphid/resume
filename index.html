@@ -74,6 +74,17 @@
 
   </style>
   <style id="styles-components">
+    .Resume {
+      font-family: 'Work Sans', serif;
+
+      display: grid;
+      grid-template-areas:
+        'Communications Identity'
+        'info works';
+      column-gap: 0.1em;
+      row-gap: 0.1em;
+    }
+
     .Summary {
       font-weight: 300;
       font-size: 0.9em;
@@ -87,24 +98,6 @@
 
     .Educations>ul>li {
       margin-bottom: 1em;
-    }
-
-    /* component styles */
-    .Resume {
-      font-family: 'Work Sans', serif;
-
-      display: grid;
-      grid-template-areas:
-        'logo Identity'
-        'info works';
-      column-gap: 0.1em;
-      row-gap: 0.1em;
-    }
-
-    /* flex the contents inside info */
-    .Info {
-      grid-area: info;
-      height: 100%;
     }
 
     .Identity {
@@ -143,6 +136,9 @@
 
     .Communication {
       margin-bottom: 0.25em;
+    }
+    .Communications {
+      grid-area: Communications;
     }
 
   </style>
