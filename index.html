@@ -146,14 +146,12 @@
     }
     .WorkSkills {
       display: flex;
-      flex-wrap: wrap;
       list-style: square;
       list-style-position: inside;
+      flex-wrap: wrap;
       font-weight: 300;
       font-size: 0.75em;
-      /* center children inside this element */
       justify-content: center;
-      list-style:
     }
     .WorkSkills li {
       /* center contents inside element*/
@@ -161,12 +159,17 @@
       align-items: center;
 
       margin: 0.25em;
+      margin-top:0;
+      margin-bottom:0;
       padding: 0.25em;
-      /* background-color: var(--emphasis-color); */
+      padding-top:0;
+      padding-bottom:0;
       color: var(--emphasis-foreground);
-      /*center contents inside element*/
-
     }
+
+    .WorkSkills li:first-child {
+    list-style: none;
+  }
   </style>
   <script type="module">
     import { h, render } from 'https://esm.sh/preact'
