@@ -179,7 +179,7 @@
     const Resume = ({ resume }) => {
       return html`
           <div class="Resume">
-            <${Identity} Identity=${resume.basics} />
+            <${Identity} identity=${resume.basics} />
             <${Communications} profiles=${resume.basics.profiles} identity=${resume.basics} />
             <div class="Info">
               <${Abilities} skills=${resume.skills}/>
@@ -191,14 +191,14 @@
           `
     }
 
-    const Identity = ({ Identity }) => {
+    const Identity = ({ identity }) => {
       return html`
         <section class="Identity">
           <h3>Identity</h3>
           <h1>
-            ${Identity.name}.
+            ${identity.name}.
           </h1>
-          <h5>${Identity.label}</h>
+          <h5>${identity.label}</h>
         </section>
       `
     }
