@@ -140,7 +140,20 @@
     .Communications {
       grid-area: Communications;
     }
-
+    .WorkSkills {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      font-weight: 200;
+    }
+    .WorkSkills li {
+      margin: 0.25em;
+      padding: 0.25em;
+      background-color: var(--emphasis-color);
+      color: var(--emphasis-foreground);
+      border-radius: 0.25em;
+    }
   </style>
   <script type="module">
     import { h, render } from 'https://esm.sh/preact'
@@ -254,8 +267,19 @@
           </header>
           <em>${work.position}</em>
           <p class="Summary">${work.summary}</p>
-          <p>${work.highlights}</p>
+          <${WorkSkills} skills=${work.skills} />
         </div>
+      `
+    }
+    const WorkSkills = ({ skills }) => {
+      return html`
+        <ul class="WorkSkills">
+          ${skills.map(skill => html`
+            <li>
+              ${skill}
+            </li>
+          `)}
+        </ul>
       `
     }
 
