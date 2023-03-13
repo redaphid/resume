@@ -162,7 +162,47 @@
   ],
   "skills": [
     {
+      "name": "Full Stack Development",
+      "level": "",
+      "skills": []
+    },
+    {
       "name": "Typescript",
+      "level": "",
+      "skills": []
+    },
+    {
+      "name": "Go",
+      "level": "",
+      "skills": []
+    },
+    {
+      "name": "C++",
+      "level": "",
+      "skills": []
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "Microcontrollers/Embedded"
+    },
+    {
+      "name": "Microservices",
+      "level": "",
+      "skills": []
+    },
+    {
+      "name": "Cloud Platform Infrastructure"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "Docker",
       "level": "",
       "skills": []
     },
@@ -172,12 +212,7 @@
       "skills": []
     },
     {
-      "name": "Go (Programming Language)",
-      "level": "",
-      "skills": []
-    },
-    {
-      "name": "Microservices",
+      "name": "Internet of Things",
       "level": "",
       "skills": []
     },
@@ -192,10 +227,10 @@
       "skills": []
     },
     {
-      "name": "And others..."
+      "name": "and others..."
     }
   ],
-  "references":[
+  "references": [
     {
       "name": "Roy van de Water",
       "email": "roy.vwater@gmail.com"
