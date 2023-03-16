@@ -1,6 +1,12 @@
 # Welcome to the amazing repository for Aaron Herres's resume!
 Like many developers, I am not a fan of wysiwyg editors for text formatting.
 
+
+Were these the best technologies to writing a document? Definitely. This is the first time such software has been written.
+
+The code is bad. But you can get some sense of my ability. And some of these technologies were new to me!
+
+
 While writing this resume (the first time I've done something like this since 2013), I spent a a lot of time fighting the resume templates in Google Docs, as the little changes I wanted to make caused all sorts of frustrating problems when it came to the style or layout of the resume.
 
 So I went on a quest to experiment with patterns that separate the data of the resume with the style.
