@@ -23,6 +23,10 @@
         "network": "twitter",
         "username": "redaphid",
         "url": "https://twitter.com/redaphid"
+      },
+      {
+        "network": "linkedin",
+        "url": "https://www.linkedin.com/in/aaron-herres-0a28bb5/"
       }
     ]
   },
