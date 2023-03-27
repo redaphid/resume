@@ -86,7 +86,7 @@
       ],
       "position": "Software Consultant",
       "startDate": "2014-03",
-      "summary": "Full stack development of Meshblu, an internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial frontend \"Octoblu\" mentioned in the Citrix section. The public instance of the Meshblu platform processed over 4 million messages per hour.",
+      "summary": "Full stack development of Meshblu, an internet of things platform, and development work on practical solutions based on that platform. \n\nMeshblu can connect hundreds different of services, internet of things devices, and hobby projects to each by translating them to a common messaging system.\n\nThis system was acquired by Citrix, who then developed the commercial frontend \"Octoblu\" mentioned in the Citrix section. The public instance of the Meshblu platform processed over 4 million messages per day.",
       "website": "octoblu.github.io"
     },
     {
