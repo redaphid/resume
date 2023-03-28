@@ -10,7 +10,7 @@ basics:
     countryCode: US
     city: Tempe
     region: AZ
-    address: Tempe, AZ
+    address: Tempe, XX
   profiles:
     - network: github
       username: redaphid

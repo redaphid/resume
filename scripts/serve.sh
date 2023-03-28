@@ -1,2 +1,2 @@
 #! /usr/bin/env sh
-npx live-server . -- --browser=google-chrome
+npx live-server . --ignore=.git --ignorePattern=".*.yaml"
