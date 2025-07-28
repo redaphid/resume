@@ -21,6 +21,24 @@ basics:
     - network: linkedin
       url: https://linkedin.com/in/aaron-herres-0a28bb5
 work:
+  - company: Sibi
+    name: Sibi
+    skills:
+      - TypeScript
+      - React
+      - Next.js
+      - Node.js
+      - GraphQL Federation
+      - AWS Lambda
+      - SST
+      - Cloudflare Workers
+      - PostgreSQL
+      - DynamoDB
+      - OpenAI APIs
+    position: Staff Software Developer (Team Headless)
+    startDate: 2023-01
+    summary: Staff-level platform engineer leading technical architecture for a property management platform's headless commerce systems. Architect of GraphQL federation infrastructure unifying 45+ microservices, with deep expertise spanning serverless systems, event-driven architecture, and AI integration. Demonstrated technical leadership through high-impact contributions across 50+ repositories and mentorship evident in collaborative development practices. Led development of multi-partner checkout infrastructure, product information management (PIM), and white-label storefronts platform. Architected Cloudflare Workers-based event streaming platform (Firehose) with webhook reliability and Salesforce integration. Implemented OpenAI-powered product content generation and built MCP (Model Context Protocol) servers for development automation. Led serverless migration to AWS Lambda using SST, establishing Infrastructure as Code patterns and CI/CD pipelines.
+    website: sibi.com
   - company: Loqwai
     name: Loqwai
     skills:
@@ -30,7 +48,8 @@ work:
       - IPFS
     position: Software Consultant
     startDate: 2021-08
-    summary: Currently working as a self-employed software consultant on a few projects for clients, including product design consulting for startups, microcontroller development and architecture for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project.
+    endDate: 2023-01
+    summary: Self-employed software consultant working on diverse projects for clients, including product design consulting for startups, microcontroller development and architecture for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project.
   - company: Magic Leap
     name: Magic Leap
     endDate: 2021-04
@@ -139,10 +158,37 @@ education:
     gpa: ""
     courses: []
 skills:
+  - name: Platform Engineering
+    level: ""
+    skills: []
+  - name: GraphQL Federation
+    level: ""
+    skills: []
+  - name: Event-Driven Architecture
+    level: ""
+    skills: []
+  - name: Serverless Architecture
+    level: ""
+    skills: []
+  - name: AI/ML Integration
+    level: ""
+    skills: []
   - name: Full Stack Development
     level: ""
     skills: []
-  - name: Typescript
+  - name: TypeScript
+    level: ""
+    skills: []
+  - name: React/Next.js
+    level: ""
+    skills: []
+  - name: Node.js
+    level: ""
+    skills: []
+  - name: AWS Lambda
+    level: ""
+    skills: []
+  - name: Cloudflare Workers
     level: ""
     skills: []
   - name: Go
@@ -153,6 +199,12 @@ skills:
     skills: []
   - name: HTML
   - name: Javascript
+  - name: E-commerce Platform Development
+    level: ""
+    skills: []
+  - name: Multi-tenant Architecture
+    level: ""
+    skills: []
   - name: Microcontrollers/Embedded
   - name: Microservices
     level: ""
@@ -168,7 +220,7 @@ skills:
   - name: Internet of Things
     level: ""
     skills: []
-  - name: Team Leadership
+  - name: Technical Leadership
     level: ""
     skills: []
   - name: Software Design
