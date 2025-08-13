@@ -30,12 +30,15 @@ jobs:
         (async () => {
           const browser = await chromium.launch();
           const page = await browser.newPage();
+          await page.emulateMedia({ media: 'screen' });
           await page.goto('http://localhost:8080', { waitUntil: 'networkidle' });
+          await page.waitForTimeout(3000);
           await page.pdf({ 
             path: 'resume.pdf', 
             format: 'Letter',
             scale: 0.75,
-            margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.5in' }
+            margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.5in' },
+            printBackground: true
           });
           await browser.close();
         })();
