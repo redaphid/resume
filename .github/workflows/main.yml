@@ -15,16 +15,22 @@ jobs:
         node-version: '18'
     - name: Install Playwright
       run: |
-        npm install playwright
+        npm install playwright http-server
         npx playwright install chromium
     - name: Generate PDF
       run: |
+        # Start a simple HTTP server in the background
+        npx http-server . -p 8080 --silent &
+        HTTP_SERVER_PID=$!
+        sleep 2
+        
+        # Generate PDF from the served content
         node -e "
         const { chromium } = require('playwright');
         (async () => {
           const browser = await chromium.launch();
           const page = await browser.newPage();
-          await page.goto('file://' + process.cwd() + '/index.html', { waitUntil: 'networkidle' });
+          await page.goto('http://localhost:8080', { waitUntil: 'networkidle' });
           await page.pdf({ 
             path: 'resume.pdf', 
             format: 'Letter',
@@ -34,6 +40,9 @@ jobs:
           await browser.close();
         })();
         "
+        
+        # Kill the HTTP server
+        kill $HTTP_SERVER_PID
     - name: Get Current Date
       id: date
       run: echo "::set-output name=date::$(date -u +'%Y-%m-%d_%H-%M-%S')"
