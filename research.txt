@@ -1,0 +1,133 @@
+Anthropic platform engineering opportunities and positioning strategy
+
+Anthropic is actively scaling its infrastructure team with 14+ open platform and infrastructure engineering positions, presenting an exceptional opportunity for platform engineers with the right skills and mission alignment. Based on comprehensive research of their hiring priorities, technical stack, and recent developments, here's your strategic positioning guide.
+Critical infrastructure roles await immediate filling
+
+Anthropic's most relevant opening is the Staff Infrastructure Engineer for the Discovery Team in San Francisco, requiring 3+ years of large-scale distributed systems experience. This role directly supports their AI scientist team building "scientific AGI" and involves designing infrastructure for training, evaluation, and deployment at massive scale. The position emphasizes Kubernetes orchestration, Terraform infrastructure-as-code, and distributed data pipelines - core platform engineering competencies. Additional roles include Engineering Managers for Inference, ML Acceleration, and Performance, plus multiple reliability engineering positions from junior to staff level.
+Indeed
+greenhouse
+
+The technical requirements consistently emphasize Python proficiency, AWS/GCP expertise, containerization at scale, and distributed systems architecture. Notably, Anthropic doesn't require ML experience for many infrastructure roles, instead valuing strong systems thinking and the ability to optimize performance at scale.
+Anthropic
+Their unified "Member of Technical Staff" title eliminates the traditional engineering-research divide, with engineers regularly contributing as first authors on research papers.
+Anthropic
+anthropic
+MCP represents your strategic differentiator
+
+Model Context Protocol has become Anthropic's crown jewel open standard,
+Anthropic
+achieving extraordinary adoption with over 1,000 community-built servers within months of its November 2024 launch.
+Hugging Face
+Anthropic
+Originally created by Anthropic as the "USB-C for AI applications," MCP now powers integrations across OpenAI, Microsoft, and Google platforms.
+Anthropic
+Anthropic
+The protocol enables AI models to securely connect to external tools and data sources through a standardized interface, solving the critical "N×M integration problem" that plagued early AI applications.
+Anthropic +2
+
+For platform engineers, MCP expertise represents a unique competitive advantage that few candidates currently possess. The protocol's JSON-RPC architecture,
+Anthropic
+Python/TypeScript SDKs,
+Model Context Protocol
+and focus on secure context exchange align perfectly with modern infrastructure requirements.
+Substack +2
+Anthropic recently announced native MCP support in their Claude API with automatic connection management and tool discovery,
+Anthropic
+making it central to their product strategy.
+Anthropic
+Highlighting experience building MCP servers, implementing the protocol's security boundaries, or contributing to the ecosystem demonstrates both technical competence and alignment with Anthropic's technical direction.
+Stytch
+GitHub
+Engineering culture demands mission alignment beyond technical skills
+
+Anthropic's culture prioritizes AI safety and beneficial outcomes for humanity above rapid commercialization.
+Anthropic
+Their core values - "Act for the global good," "Do the simple thing that works," and "Put the mission first"
+anthropic
+- permeate every aspect of their engineering culture.
+Anthropic
+The company maintains a high-trust, low-ego environment where direct communication and empirical problem-solving trump theoretical complexity.
+Anthropic
+
+Employee reviews consistently highlight the "indescribable feeling of super high talent density" and mission-driven colleagues who work from passion rather than pressure.
+Blind
+However, the fast-paced environment (3.5/5 work-life balance rating)
+Glassdoor
+and constant pivoting require exceptional adaptability. The interview process, rated among tech's most challenging,
+Getbridged
+includes coding challenges in shared environments,
+Anthropic
+system design focused on AI infrastructure, and explicit values alignment discussions.
+Getbridged +2
+Candidates must demonstrate genuine commitment to AI safety
+DesignGurus
+Getbridged
+- this isn't a checkbox but a core requirement deeply embedded in their evaluation process.
+Technical stack reveals infrastructure priorities
+
+Anthropic's infrastructure runs on a sophisticated multi-cloud architecture leveraging both AWS (with $4B investment and Trainium chip usage) and Google Cloud Platform (with TPU clusters). Their technical stack centers on Python for core development, with TypeScript/JavaScript for web interfaces and Go/Rust for systems programming.
+Vercel +2
+The infrastructure team manages petabyte-scale distributed systems processing 100 billion data points for model training.
+
+Key technologies include Kubernetes for orchestration, Prometheus/Grafana for monitoring, and custom distributed shuffle algorithms for handling 100TB+ datasets.
+Medium
+The recent Claude 4 launch demonstrated their infrastructure capabilities, with models achieving 72.5% on SWE-bench while maintaining 7-hour continuous operation.
+anthropic
+Anthropic
+Their internal teams use "Claude Code" for development, reporting 3x faster incident resolution and treating it as their "first stop" for programming tasks.
+Recent developments signal infrastructure expansion
+
+Anthropic's $3.5B Series E funding at $61.5B valuation (March 2025) and potential $170B round
+Bloomberg
+CNBC
+signal massive infrastructure scaling ahead.
+anthropic
+Wikipedia
+Their new Agent Capabilities API introduces critical platform features: sandboxed code execution ($0.05/hour after 50 free hours), native MCP connector support, persistent file storage, and extended prompt caching with 12x TTL improvement for 90% cost savings.
+Anthropic
+
+The May 2025 "Code with Claude" developer conference represents their first major developer outreach,
+Anthropic
+while the Economic Futures Program demonstrates commitment to understanding AI's societal impact.
+Anthropic
+Revenue has grown to $4B annualized with 10x growth in code generation during Q4 2024.
+CNBC
+Government partnerships, including FedRAMP High certification and a $200M DOD contract,
+Wikipedia
+indicate enterprise-grade infrastructure requirements that demand experienced platform engineers.
+TechCrunch +2
+Strategic positioning for Aaron Herres's background
+
+Research reveals Aaron Herres (github.com/redaphid) brings strong IoT and system automation experience from developing "The Tentacle" library at Octoblu, enabling code-free microcontroller programming through cloud platforms. While lacking visible MCP or AI experience, his demonstrated abilities in hardware interfaces, Node.js development, and creating developer-friendly abstractions translate well to AI infrastructure challenges.
+
+To bridge this gap, Aaron should immediately: build and open-source MCP server implementations showcasing his integration expertise, complete Anthropic's MCP Coursera course for credibility, contribute to the MCP ecosystem on GitHub,
+GitHub
+and frame his IoT platform work as "enabling seamless system integration" - directly relevant to MCP's mission.
+DeepLearning.AI
+His mentoring reputation and ability to introduce "huge eye-opening concepts" aligns with Anthropic's collaborative culture.
+LinkedIn
+Resume optimization tactics for maximum impact
+
+Structure your resume with a mission-aligned professional summary emphasizing AI safety and scalable infrastructure. Lead with quantified achievements: "Architected distributed systems serving 1M+ users with 99.99% uptime" or "Reduced deployment time 95% through GitOps automation."
+Resume Worded
+Teal
+Position MCP prominently in your skills section as an emerging technology you're actively developing expertise in.
+Indeed +3
+
+Critical technical keywords for ATS optimization include: Kubernetes, Terraform, Python, distributed systems, GPU/TPU optimization, monitoring/observability (Prometheus, Grafana), and Model Context Protocol.
+Wikipedia +5
+Frame all experience through an AI safety lens - "Implemented zero-trust architecture ensuring secure model deployment" rather than generic security descriptions. Include a dedicated "Open Source Contributions" section highlighting any MCP, infrastructure, or AI safety projects.
+
+The cover letter should explicitly address your transition motivation toward AI safety, specific enthusiasm for Constitutional AI and Anthropic's approach, and how your platform expertise enables responsible AI scaling.
+Anthropic
+DesignGurus
+Keep it under 300 words but make every sentence demonstrate both technical competence and values alignment.
+Medium
+Relocate.me
+Remember their 12-month reapplication policy
+anthropic
+- if unsuccessful initially, use the time to build MCP expertise and AI safety knowledge before reapplying.
+Anthropic
+
+This comprehensive positioning strategy leverages Anthropic's current infrastructure expansion, MCP's strategic importance, and their unique culture to maximize your application's impact. The key is demonstrating not just technical excellence but genuine alignment with their mission of building beneficial AI systems safely and responsibly.
+Anthropic +2

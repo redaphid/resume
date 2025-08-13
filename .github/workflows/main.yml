@@ -9,12 +9,31 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3.3.0
-    - name: Generate PDF
-      uses: fifsky/html-to-pdf-action@master
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
       with:
-        htmlFile: ./index.html
-        outputFile: ./resume.pdf
-        pdfOptions: '{"format": "Letter", "scale": 0.75}'
+        node-version: '18'
+    - name: Install Playwright
+      run: |
+        npm install playwright
+        npx playwright install chromium
+    - name: Generate PDF
+      run: |
+        node -e "
+        const { chromium } = require('playwright');
+        (async () => {
+          const browser = await chromium.launch();
+          const page = await browser.newPage();
+          await page.goto('file://' + process.cwd() + '/index.html', { waitUntil: 'networkidle' });
+          await page.pdf({ 
+            path: 'resume.pdf', 
+            format: 'Letter',
+            scale: 0.75,
+            margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.5in' }
+          });
+          await browser.close();
+        })();
+        "
     - name: Get Current Date
       id: date
       run: echo "::set-output name=date::$(date -u +'%Y-%m-%d_%H-%M-%S')"
