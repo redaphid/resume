@@ -1,17 +1,17 @@
 {
   "basics": {
     "name": "Aaron Herres",
-    "label": "A full-stack, team-building software developer with an interest in software architecture, research, and coding philosophy. ",
+    "label": "Platform Systems Engineer specializing in AI infrastructure, distributed systems, and developer tooling platforms",
     "picture": "",
     "email": "iam@aaronherres.com",
     "phone": "1 602-420-3865",
     "website": "",
-    "summary": "A software developer with over 20 years experience. A generalist, Aaron has worked in a variety of work environments ranging from startups to large corporations. Aaron's passion for generalism and minimalist design has allowed him to work on projects ranging from microcontrollers to the development of on-premise large cloud computing clusters. Aaron also loves leading teams, as it gives him a captive audience to discuss software development philosophy and exercise his strategies for delivering low-defect software quickly.",
+    "summary": "Full-stack Platform Systems Engineer with 20+ years building complex distributed systems, from IoT platforms to AI-powered developer tooling. Pioneer in Model Context Protocol (MCP) development with production MCP servers deployed at scale. Expert in TypeScript, React, Node.js, serverless architectures, GraphQL federation, and event-driven systems. Led platform engineering initiatives serving 45+ microservices and established cloud Infrastructure as Code patterns for hybrid deployments. Passionate about creating developer-first tooling that bridges AI and traditional systems.",
     "location": {
       "countryCode": "US",
       "city": "Tempe",
       "region": "AZ",
-      "address": "Tempe, AZ"
+      "address": "Tempe, XX"
     },
     "profiles": [
       {
@@ -32,6 +32,28 @@
   },
   "work": [
     {
+      "company": "Sibi",
+      "name": "Sibi",
+      "skills": [
+        "TypeScript/React",
+        "GraphQL Federation",
+        "Cloudflare Workers",
+        "AWS Lambda & DynamoDB",
+        "Model Context Protocol (MCP)",
+        "Event-Driven Architecture",
+        "Serverless Computing",
+        "SST (Serverless Stack)",
+        "Webhook Architecture",
+        "Distributed Systems",
+        "API Design & Integration",
+        "B2B Platform Development"
+      ],
+      "position": "Staff Software Developer",
+      "startDate": "2023-01",
+      "summary": "Staff engineer on platform team for property management platform serving 500K+ orders.  Technical evangelist for emerging technologies including MCP and vector stores through internal workshops and knowledge sharing.\n**External API & B2B Platform Development:** • Designed and built first external integration points for greenfield platform, creating REST and GraphQL APIs for partner companies • Led direct customer discovery with external companies to identify critical integration requirements and API design priorities   • Successfully onboarded first B2B customers to platform through custom integration solutions, establishing new revenue streams\n**Platform Engineering & Systems:** • Built production systems within GraphQL federation architecture spanning 45+ microservices • Designed event-driven streaming platform (Firehose) handling webhook delivery and cross-system synchronization • Deployed multiple production services on Cloudflare Workers infrastructure with D1, KV, and vector store integrations\n**Model Context Protocol (MCP) Development:** • Built multiple production MCP servers: Henchman (Slack integration), Bot-brain (vector stores), Missing-cent (invoice discrepancy detection) • Created MCP agents for GraphQL federation access, asset management, and AI-powered developer tooling • Maintained internal knowledge sharing channels with MCP implementation patterns and best practices",
+      "website": "sibi.com"
+    },
+    {
       "company": "Loqwai",
       "name": "Loqwai",
       "skills": [
@@ -42,7 +64,8 @@
       ],
       "position": "Software Consultant",
       "startDate": "2021-08",
-      "summary": "Currently working as a self-employed software consultant on a few projects for clients, including product design consulting for startups, microcontroller development and architecture for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project."
+      "endDate": "2023-01",
+      "summary": "Self-employed software consultant working on diverse projects for clients, including product design consulting for startups, microcontroller development and architecture for an open-source IoT farming project, and software development and docker infrastructure for a decentralized storage project."
     },
     {
       "company": "Magic Leap",
@@ -166,14 +189,72 @@
   ],
   "skills": [
     {
-      "name": "Full Stack Development",
-      "level": "",
-      "skills": []
+      "name": "Model Context Protocol (MCP)",
+      "level": "Expert"
     },
     {
-      "name": "Typescript",
-      "level": "",
-      "skills": []
+      "name": "Platform Engineering",
+      "level": "Expert"
+    },
+    {
+      "name": "GraphQL Federation",
+      "level": "Expert"
+    },
+    {
+      "name": "Event-Driven Architecture",
+      "level": "Expert"
+    },
+    {
+      "name": "Serverless Computing",
+      "level": "Expert"
+    },
+    {
+      "name": "Cloudflare Workers",
+      "level": "Expert"
+    },
+    {
+      "name": "Full Stack Development",
+      "level": "Expert"
+    },
+    {
+      "name": "TypeScript",
+      "level": "Expert"
+    },
+    {
+      "name": "React",
+      "level": "Expert"
+    },
+    {
+      "name": "Node.js",
+      "level": "Expert"
+    },
+    {
+      "name": "API Design & Integration",
+      "level": "Expert"
+    },
+    {
+      "name": "B2B Platform Development",
+      "level": "Advanced"
+    },
+    {
+      "name": "AWS Lambda",
+      "level": "Expert"
+    },
+    {
+      "name": "Cloud Infrastructure",
+      "level": "Expert"
+    },
+    {
+      "name": "AWS (DynamoDB/CloudFormation)",
+      "level": "Advanced"
+    },
+    {
+      "name": "Infrastructure as Code (SST)",
+      "level": "Advanced"
+    },
+    {
+      "name": "Vector Stores & AI Integration",
+      "level": "Advanced"
     },
     {
       "name": "Go",
@@ -190,6 +271,16 @@
     },
     {
       "name": "Javascript"
+    },
+    {
+      "name": "E-commerce Platform Development",
+      "level": "",
+      "skills": []
+    },
+    {
+      "name": "Multi-tenant Architecture",
+      "level": "",
+      "skills": []
     },
     {
       "name": "Microcontrollers/Embedded"
@@ -221,7 +312,7 @@
       "skills": []
     },
     {
-      "name": "Team Leadership",
+      "name": "Technical Leadership",
       "level": "",
       "skills": []
     },
