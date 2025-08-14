@@ -40,13 +40,13 @@ work:
     startDate: 2023-01
     summary: |-
       Staff engineer on platform team for property management platform serving 500K+ orders. Technical evangelist for emerging technologies including MCP and vector stores through internal workshops and knowledge sharing.
-      
+
       External API & B2B Platform Development:
       Designed and built first external integration points for greenfield platform, creating REST and GraphQL APIs for partner companies. Led direct customer discovery with external companies to identify critical integration requirements and API design priorities. Successfully onboarded first B2B customers to platform through custom integration solutions, establishing new revenue streams.
-      
+
       Platform Engineering & Systems:
       Built production systems within GraphQL federation architecture spanning 45+ microservices. Designed event-driven streaming platform (Firehose) handling webhook delivery and cross-system synchronization. Deployed multiple production services on Cloudflare Workers infrastructure with D1, KV, and vector store integrations.
-      
+
       Model Context Protocol (MCP) Development:
       Built multiple production MCP servers including Henchman (Slack integration), Bot-brain (vector stores), and Missing-cent (invoice discrepancy detection). Created MCP agents for GraphQL federation access, asset management, and AI-powered developer tooling. Maintained internal knowledge sharing channels with MCP implementation patterns and best practices.
     website: sibi.com
@@ -242,8 +242,6 @@ skills:
 references:
   - name: Roy van de Water
     email: roy.vwater@gmail.com
-  - name: Andrew Steinheiser
-    email: me@iamandrew.io
   - name: Peter DeMartini
     email: thepeterdemartini@gmail.com
   - name: Gage Irving

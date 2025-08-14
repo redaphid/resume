@@ -8,15 +8,18 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Checkout
-      uses: actions/checkout@v3.3.0
+      uses: actions/checkout@v4
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '18'
-    - name: Install Playwright
+        node-version: '20'
+    - name: Install dependencies
       run: |
-        npm install playwright http-server
+        npm install yq playwright http-server
         npx playwright install chromium
+    - name: Generate JSON from YAML
+      run: |
+        npx yq -o json -p yaml ./resume.yaml > ./resume.json
     - name: Generate PDF
       run: |
         # Start a simple HTTP server in the background
@@ -48,9 +51,9 @@ jobs:
         kill $HTTP_SERVER_PID
     - name: Get Current Date
       id: date
-      run: echo "::set-output name=date::$(date -u +'%Y-%m-%d_%H-%M-%S')"
+      run: echo "date=$(date -u +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
     - name: GH Release
-      uses: softprops/action-gh-release@v0.1.15
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: releases/${{ steps.date.outputs.date }}
         files: ./resume.pdf
